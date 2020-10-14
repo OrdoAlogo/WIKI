@@ -1,1 +1,24 @@
+*{margin: 0;}
+/*ENCABEZADO*/
 header{display: flex; justify-content:space-between; flex-direction: row; background: grey; justify-items: center;}
+.titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
+.logo{padding: 10px;}
+
+/*ESTILOS DEL MENU DE NAVEGACION*/
+nav{margin: 0 auto; width: 100%; background: grey; }
+ul{background: black; display: flex; border-radius: 10px; width: 90%; margin: 0 auto; text-align: center; height: 50px;}
+ul li{list-style: none; display: inline; margin: 0 auto; width: 100%; padding: 15px; }
+ul li a{ text-decoration: none; color: white; background: black; font-size: 20px; padding: 5px;}
+ul li a:hover{background: white; color: black; }
+.menuLetra{display: none;cursor: pointer;}
+.icon-menu{display: none; } 
+.icon-cross{display: none;} 
+
+/*TAMAÑO MOVIL*/
+@media screen and (max-width:500px){
+ul li { display: block; text-align: left;}
+nav ul{top: -1500px; position: relative; display: block; }
+.icon-menu{display: block;}
+.menuLetra{display: block;}
+
+}
