@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>WIKI | INICIO</title>
+        <link class="logo" rel="icon" type="image/vnd.microsoft.icon" href="img/txurdi_logo.jpg">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/fuentes-iconos/style.css"> 
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -13,12 +15,14 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $(".menuLetra").toggle(function(){
-                $('nav ul').animate({"top":"0px"},1000);
+
+                $('nav ul').animate({"left":"0px"},1000);
                 $(".icon-menu").css({"display":"none"});
                 $(".icon-cross").css({"display":"block"});
+                 $('nav ul').css({"height":"100%"});
             },
             function(){
-                $('nav ul').animate({"top":"-1500px"},1000);
+                $('nav ul').animate({"left":"-1500px"},1000);
                 $(".icon-menu").css({"display":"block"});
                 $(".icon-cross").css({"display":"none"});
             })
@@ -31,8 +35,7 @@
         </header>
         <nav>
             <P class="menuLetra">MENU</P>
-            <span class="icon-menu"></span>
-            <span class="icon-cross"></span>
+            <span class="icon-cross"></span><span class="icon-menu"></span>
            <ul>
             <li> <a href="inicio.html">Inicio</a></li>
             <li> <a href="proxmox.html">Proxmos</a></li>
@@ -40,17 +43,61 @@
             <li><a href="comandos.html">Comandos Generales</a></li>
            </ul>
         </nav>
-        <main>
-            <section>
-
+        <main class="main">
+            <section class="portada">
+                <h1>ESLOGAN DEL CENTRO</h1>
             </section>
-            <section>
 
+            <section class="subPortada">
+                <article class="uno">
+                    <div>
+                        <h3> PROGRAMA ERASMUS</h3>
+                        <p>Debian GNU/Linux es un sistema operativo libre, desarrollado por miles de voluntarios de todo el mundo</p>
+                        <p>dedicación de Debian al software libre, su base de voluntarios</p>
+                    </div>
+                    <div>
+                        <img src="img/Erasmus.jpg" alt="Imagen no soportada">
+                    </div>
+                </article>
+
+                <article class="dos">
+                    <div>
+                        <img src="img/fp_Dual.jpg" alt="Imagen no soportada">
+                    </div>
+                    <div>
+                        <h3>FP DUAL</h3>
+                        <p>Proxmox Virtual Environment, o Proxmox VE, entorno de virtualización de servidores de código abierto.</p>
+                        <p>Está en distribuciones GNU/Linux basadas en Debian con una versión modificada del Kernel RHEL</p> 
+                    </div>
+                </article>
+
+                <article class="tres">
+                    <div>
+                        <img src="img/Qcalidad_T.png" alt="Imagen no soportada">
+                    </div>
+                    <div>
+                        <h3>CALIDAD TURISTICA</h3>
+                        <p>Ubuntu es un sistema operativo de software libre y código abierto. Es una distribución de Linux basada en Debian.</p>
+                        <p>Puede correr en computadores de escritorio y servidores.</p>
+                    </div>
+                </article>
             </section>
 
         </main>
         <footer>
-
+            <div class="rrss">
+                <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
+                <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
+            </div>
+            <div class="info">
+                <p>Grupo 2 Castellano - FPTxurdinaga 2020</p>
+            </div>
+            <div class="contactos">
+                <p>Tel contacto: 94 444 444 444</p>
+                <p>Dirección: c/doctor Ornilla</p>
+                <p>Email: correo@gmail.com</p>
+            </div>
         </footer>
     </body>
 </html>
