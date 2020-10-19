@@ -34,6 +34,12 @@ img:hover{opacity: 0.5;}
 .uno,.dos,.tres{display: flex; flex-direction: row; align-items: center; justify-items: center; padding: 10px;}
 .uno div img,.dos div img,.tres div img{display: block; margin: 0 auto; width: 100%;}
 
+#proxmox,#linux,#comandos{height: 550px; border-bottom: 3px solid black;}
+.subir{background: black; height: 70px; position: static;}
+.subir a {text-decoration: none; float: right; margin-right: 20px; border:1px solid red;}
+.subir a span{font-size: 20px; color: white;}
+.subir a span:hover{color: grey;}
+
 /*ESTILOS DEL PIE DE PAGINA*/
 footer{margin: 0 auto; width: 100%; height: 100px; background: black; display: flex; flex-direction: row; align-items: center; justify-items: center;
        justify-content:space-around;}

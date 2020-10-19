@@ -29,7 +29,7 @@
         });
     </script>
     <body>
-        <header>
+        <header id="encabezado">
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
             <div class="titulo"><h1>WIKI PROX</h1></div>
         </header>
@@ -37,10 +37,11 @@
             <P class="menuLetra">MENU</P>
             <span class="icon-cross"></span><span class="icon-menu"></span>
            <ul>
-            <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="proxmox.html">Proxmos</a></li>
-            <li><a href="linux.html">Linux</a></li>
-            <li><a href="comandos.html">Comandos Generales</a></li>
+            <li> <a href="index.html"><span class="icon-home"></span></a></li>
+            <li> <a href="#proxmox">Proxmos</a></li>
+            <li><a href="#linux">Linux</a></li>
+            <li><a href="#comandos">Comandos Generales</a></li>
+            <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
         <main class="main">
@@ -83,8 +84,28 @@
                 </article>
             </section>
 
+            <!-- PROXMOS -->
+            <div id="proxmox">
+                <h2>PROXMOS</h2>
+            </div>
+
+            <!-- LINUX -->
+            <div id="linux">
+                <h2>LINUX</h2>
+            </div>
+
+            <!-- COMANDOS -->
+            <div id="comandos">
+                <h2>COMANDOS GENERALES</h2>
+                
+            </div>
+
+            <!-- TECLA SUBIR -->
+            <div class="subir">
+                <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
+            </div>
         </main>
-        <footer>
+        <footer id="contacto">
             <div class="rrss">
                 <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
                 <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
