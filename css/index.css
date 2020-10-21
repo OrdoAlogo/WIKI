@@ -1,8 +1,14 @@
 *{margin: 0;}
+@font-face{
+       font-family: fuentePropia;
+       src: url(../css/Schoolwork-Regular.ttf);
+}
 body{}
 /*ENCABEZADO*/
 header{display: flex; justify-content:space-between; flex-direction: row; background: grey; justify-items: center;}
 .titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
+.titulo h1{font-family: fuentePropia; font-size: 7rem;}
+
 .logo{padding: 10px;}
 .logo img{border-radius: 15px;}
 
@@ -10,10 +16,10 @@ header{display: flex; justify-content:space-between; flex-direction: row; backgr
 nav{margin: 0 auto; width: 100%; background: grey; }
 ul{background: black; display: flex; width: 80%; margin: 0 auto; text-align: center; }
 ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
-ul li a{ text-decoration: none; color: white;  font-size: 20px; padding: 5px; border-radius: 5px; }
+ul li a{ text-decoration: none; color: white;  font-size: 2rem; font-family: fuentePropia; padding: 5px; border-radius: 5px; }
 
 ul li a:hover{color: #393738; background: white;}
-.menuLetra{display: none;cursor: pointer;}
+.menuLetra{display: none;cursor: pointer; font-family: fuentePropia; font-size: 20px;}
 .icon-menu{display: none; } 
 .icon-cross{display: none;} 
 .icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 20px;}
@@ -23,8 +29,9 @@ ul li a:hover{color: #393738; background: white;}
 .main{margin: 0 auto; width: 100%;}
 .portada{height: 500px; background-image: url(../img/aulasC.jpg); background-size: cover;background-attachment:scroll; margin: 0 auto;
        display: flex; align-items: center; justify-items: center; justify-content: center;}
-.portada h1{ text-align: center; font-size: 100px; color: white; }
-
+.portada h1{ text-align: center; font-size: 10rem; color: white; font-family: fuentePropia;}
+h3{font-family: fuentePropia; font-size: 3rem;}
+h2{font-family: fuentePropia; font-size: 4rem;}
 .subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
               margin: 0 auto; width: 100%;}
 .subPortada article{ background: white; width: 100%; margin: 2%;}
@@ -36,7 +43,7 @@ img:hover{opacity: 0.5;}
 
 #proxmox,#linux,#comandos{height: 550px; border-bottom: 3px solid black;}
 .subir{background: black; height: 70px; position: static;}
-.subir a {text-decoration: none; float: right; margin-right: 20px; border:1px solid red;}
+.subir a {text-decoration: none; float: right; margin-right: 20px;}
 .subir a span{font-size: 20px; color: white;}
 .subir a span:hover{color: grey;}
 
