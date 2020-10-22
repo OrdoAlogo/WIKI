@@ -12,25 +12,30 @@ article{
 }
 
 #pasos{
-    height: 40%;
-    width: 50%;
+    height: 30%;
+    width: 40%;
     margin-left:  25%;
     
-
 }
 
 #pasoFinalP{
-    height: 300px;
-    width: 900px;
+    height: 30%;
+    width: 40%;
     margin-left:  25%;
 }
 span{
     font-size: 25px;
 }
-p{
+#paso{
     margin-left: 20%;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+@media only screen and (min-width: 400px) {
+
+
+
 }
 
 
