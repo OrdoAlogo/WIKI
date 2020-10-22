@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(177, 169, 169);
+}
+main{
+    margin: 1%;
+    
+    
+}
+
+article{
+    margin-top: 2%;
+}
+
+#pasos{
+    height: 40%;
+    width: 50%;
+    margin-left:  25%;
+    
+
+}
+
+#pasoFinalP{
+    height: 300px;
+    width: 900px;
+    margin-left:  25%;
+}
+span{
+    font-size: 25px;
+}
+p{
+    margin-left: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
