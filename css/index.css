@@ -5,26 +5,26 @@
 }
 body{}
 /*ENCABEZADO*/
-header{display: flex; justify-content:space-between; flex-direction: row; background: grey; justify-items: center;}
+header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
 .titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
-.titulo h1{font-family: fuentePropia; font-size: 7rem;}
+.titulo h1{font-family: fuentePropia; font-size: 7rem; color: #32281B;}
 
 .logo{padding: 10px;}
 .logo img{border-radius: 15px;}
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
-nav{margin: 0 auto; width: 100%; background: grey; }
-ul{background: black; display: flex; width: 80%; margin: 0 auto; text-align: center; }
-ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
-ul li a{ text-decoration: none; color: white;  font-size: 2rem; font-family: fuentePropia; padding: 5px; border-radius: 5px; }
+nav{margin: 0 auto; width: 100%; background: #8A662A; }
+ul{background:#8A662A; display: flex; width: 80%; margin: 0 auto; text-align: center; }
+ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 10px;}
+ul li a{ text-decoration: none; color: white;  font-size: 2rem; font-family: fuentePropia; /* padding: 2px; */ border-radius: 5px; }
 
-ul li a:hover{color: #393738; background: white;}
+ul li a:hover{color: #B5700E; background: #32281B; }
 .menuLetra{display: none;cursor: pointer; font-family: fuentePropia; font-size: 20px;}
 .icon-menu{display: none; } 
 .icon-cross{display: none;} 
-.icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 20px;}
+.icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 10px;}
 .menuLetra:hover{color: white;}
-
+.icon-home,.icon-info{font-size: 20px;}
 /*ESTILOS DE LA PARTE PRINCIPAL*/
 .main{margin: 0 auto; width: 100%;}
 .portada{height: 500px; background-image: url(../img/aulasC.jpg); background-size: cover;background-attachment:scroll; margin: 0 auto;
@@ -34,7 +34,7 @@ h3{font-family: fuentePropia; font-size: 3rem;}
 h2{font-family: fuentePropia; font-size: 4rem;}
 .subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
               margin: 0 auto; width: 100%;}
-.subPortada article{ background: white; width: 100%; margin: 2%;}
+.subPortada article{ background: #C0BD8D; width: 100%; margin: 2%;}
 .subPortada article p{text-align: justify; padding: 5px;}
 .subPortada article h3{text-align: center;}
 img:hover{opacity: 0.5;}
@@ -42,13 +42,15 @@ img:hover{opacity: 0.5;}
 .uno div img,.dos div img,.tres div img{display: block; margin: 0 auto; width: 100%;}
 
 #proxmox,#linux,#comandos{height: 550px; border-bottom: 3px solid black;}
-.subir{background: black; height: 70px; position: static;}
+.subir{background: #B5700E; height: 50px; position: static;}
 .subir a {text-decoration: none; float: right; margin-right: 20px;}
 .subir a span{font-size: 20px; color: white;}
 .subir a span:hover{color: grey;}
 
+marquee{height: 50px; background: #32281B; font-size: 30px; color: white;}
+marquee span{color: #C0BD8D;}
 /*ESTILOS DEL PIE DE PAGINA*/
-footer{margin: 0 auto; width: 100%; height: 100px; background: black; display: flex; flex-direction: row; align-items: center; justify-items: center;
+footer{margin: 0 auto; width: 100%; height: 100px; background: #B5700E; display: flex; flex-direction: row; align-items: center; justify-items: center;
        justify-content:space-around;}
 footer p{color: white; text-align: center;}
 .rrss{display: flex; flex-direction: column; align-items: center;}
