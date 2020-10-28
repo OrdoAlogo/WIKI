@@ -7,7 +7,7 @@ body{}
 /*ENCABEZADO*/
 header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
 .titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
-.titulo h1{font-family: fuentePropia; font-size: 7rem; color: #32281B;}
+.titulo h1{font-family: fuentePropia; font-size: 7rem; color: #32281B; /* -webkit-text-stroke:0.25px white; */}
 
 .logo{padding: 10px; margin-left: 20px; margin-top: 20px;}
 .logo:hover img{-webkit-transform: scale(1.1); }
@@ -30,7 +30,7 @@ ul li a:hover{color: #B5700E; background: #32281B; }
 .main{margin: 0 auto; width: 100%;}
 .portada{height: 500px; background-image: url(../img/aulasC.jpg); background-size: cover;background-attachment:scroll; margin: 0 auto;
        display: flex; align-items: center; justify-items: center; justify-content: center;}
-.portada h1{ text-align: center; font-size: 10rem; color: red; font-family: fuentePropia; -webkit-text-stroke:0.25px white;}
+.portada h1{ text-align: center; font-size: 10vw; color: red; font-family: fuentePropia; -webkit-text-stroke:0.25px white;}
 h3{font-family: fuentePropia; font-size: 3rem;}
 h2{font-family: fuentePropia; font-size: 4rem;}
 .subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
@@ -78,6 +78,7 @@ nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; positio
 /*MAIN*/
 .subPortada{flex-direction: column;}
 .uno,.dos,.tres{flex-direction: column;}
+.portada h1{font-size: 15vw;}
 /*PIE DE PAGINA*/
 footer{flex-direction: column-reverse; justify-content: space-between;}
 .rrss{flex-direction: row;}
@@ -85,6 +86,6 @@ footer{flex-direction: column-reverse; justify-content: space-between;}
 }
 
 @media screen and (max-width:900px){
-      
+       .portada h1{font-size: 20vw;}
        .uno,.dos,.tres{flex-direction: column;}     
 }
