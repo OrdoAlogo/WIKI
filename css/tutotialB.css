@@ -1,42 +1,46 @@
 
 body{
-    background-color: rgb(177, 169, 169);
+  background-color: rgb(177, 169, 169);
 }
 main{
-    margin: 1%;
+  margin: 1%;
      
 }
 
 article{
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
-p{
+/* p{
     font-size:2vw;
-}
+} */
 span{
     font-size: 2.5vw;
+}
+h1{
+  text-align: center;
 }
 
 #pasos{
  
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
     
 }
 
 #pasoFinalP{
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #paso{
-    margin-left: 20%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+  margin-left: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size:1vw;
 }
 
 
