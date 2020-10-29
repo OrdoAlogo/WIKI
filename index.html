@@ -7,31 +7,13 @@
         <link rel="stylesheet" type="text/css" href="css/fuentes-iconos/style.css"> 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <script src="../js/jquery.color.js"></script>
-    <script src="../js/jquery-1.6.3.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menuLetra").toggle(function(){
-
-                $('nav ul').animate({"left":"0px"},1000);
-                $(".icon-menu").css({"display":"none"});
-                $(".icon-cross").css({"display":"block"});
-                 $('nav ul').css({"height":"100%"});
-            },
-            function(){
-                $('nav ul').animate({"left":"-1500px"},1000);
-                $(".icon-menu").css({"display":"block"});
-                $(".icon-cross").css({"display":"none"});
-            })
-        });
-    </script>
+    <!--SCRIPT PAR EL MENÚ-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script src="../WIKI/miJS/wikiJ.js"> </script>
     <body>
         <header id="encabezado">
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
-            <div class="titulo"><h1>WIKI PROX</h1></div>
+            <div class="titulo" data-animation="center" ><h1>WIKI PROX</h1></div>
         </header>
         <nav>
             <P class="menuLetra">MENÚ</P>
@@ -85,7 +67,22 @@
             </section>
 
            <marquee> <span> NOTICIAS DE ÚLTIMA HORA:</span>  PRESENTACIÓN DE LOS RETOS: 21-Nov   ||  FECHA INICIO EXÁMENES: 22-Nov   ||   </marquee>
-
+            <div class="video_p" data-animation="bonus">
+                <div>
+                    <h3>VIDEO PROMOCIONAL</h3>
+                     <iframe width="560" height="315"  src="https://www.youtube.com/embed/gczaI1B3chA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                </div>
+                <div>
+                    <h3>NUESTROS CICLOS FORMATIVOS</h3>
+                    <P>TÉCNICO SUPERIOR EN ADMINISTRACIÓN Y FINANZAS</P>
+                    <P>TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB</P>
+                    <P>TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA</P>
+                    <P>TÉCNICO EN SISTEMAS MICROINFORMÁTICOS Y REDES</P>
+                    <p>TÉCNICO SUPERIOR EN LABORATORIO DE ANÁLISIS Y DE CONTROL DE CALIDAD</p>
+                    <p>TÉCNICO EN ACTIVIDADES COMERCIALES</p>
+                    <p>TÉCNICO EN INSTALACIONES DE TELECOMUNICACIONES</p>
+                </div>
+            </div>
             <!-- TECLA SUBIR -->
             <div class="subir">
                 <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
@@ -98,12 +95,14 @@
                 <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
             </div>
             <div class="info">
+                <p>Email: correo@gmail.com</p>
                 <p>Grupo 2 Castellano - FPTxurdinaga 2020</p>
+                <p>Tel contacto: 94 444 444 444</p>
             </div>
             <div class="contactos">
-                <p>Tel contacto: 94 444 444 444</p>
-                <p>Dirección: c/Doctor Ornilla</p>
-                <p>Email: correo@gmail.com</p>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.699369407759!2d-2.9049711485527525!3d43.257722079034274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fac87437727%3A0x364f27e82def0130!2sCIFP%20Txurdinaga%20LHII!5e0!3m2!1ses!2ses!4v1603958144081!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </footer>
     </body>
