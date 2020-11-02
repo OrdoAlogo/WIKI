@@ -33,14 +33,27 @@
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
             <div class="titulo"><h1>WIKI PROX</h1></div>
         </header>
-        <nav>
-            <P class="menuLetra">MENU</P>
+        <nav id="menu">
+            <P class="menuLetra">MENÚ</P>
             <span class="icon-cross"></span><span class="icon-menu"></span>
            <ul>
             <li><a href="index.html"><span class="icon-home"></span></a></li>
-            <li><a href="#proxmox">Proxmos</a></li>
-            <li><a href="#linux">Linux</a></li>
-            <li><a href="#comandos">Comandos Generales</a></li>
+            <li><a href="proxmox.html">Proxmox</a></li>
+            <li><a href="linux.html">Linux</a>
+                <ul>
+                    <li><a href="SSH.html">SSH</a></li>
+                    <li><a href="ftp.html">FTP</a></li>
+                   
+                </ul>
+            </li>
+            <li><a href="freenas.html">FreeNAS</a>
+                <ul>
+                    <li><a href="freenasInstall.html">Instalación</a></li>
+                    <li><a href="freenasConf.html">Configuración</a></li>
+                </ul>
+            
+            </li>
+            <!-- <li><a href="comandos.html">Comandos Generales</a></li> -->
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
