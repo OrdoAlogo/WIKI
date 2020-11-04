@@ -9,10 +9,11 @@
 header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
 .titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
 .titulo h1{font-family: fuenteWiki; font-size: 7rem; color: #32281B; position: relative; display: block; padding: 5px; }
+
 /*Efecto subrayado del titulo del encabezado*/
 .titulo h1::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
        background: linear-gradient(to right,#B5700E, #32281B ,#B5700E);
-       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;}
+       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 1.5s ease-in-out;}
 .titulo h1:hover::before{ transform: scaleX(1);}
 .titulo[data-animation="center"] h1::before { transform-origin: center;} 
 .titulo[data-animation="center"] h1:hover::before { transform-origin: center; transform: scaleX(1);
