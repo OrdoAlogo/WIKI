@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tutorialA.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <p class="expliacion">Teniendo el ubuntu server instalado o cualquier otro sistema linux 
+            podemos instalar un servicio DNS para traducir nuestras direcciones  a el nombre 
+            deseado y no tener que acordarnos de la ip completa. <br>
+            Primero tendremos que instalar el bind 9 con la siguiente linea <br>
+            <p class="comando">sudo apt-get install bind9</p><br>
+            <p class="explicacion"> Una vez instalado tendremos que ir a la ruta /etc/bind/ para hacer unas 
+                configuraciones.<br>
+            <p class="comando">sudo cd /etc/bind</p><br>
+            <p class="explicacion"> Una vez en esta ruta tendremos que abrir con nano el siguiente archivo 
+                atraves del siguiente comando. <br>
+            <p class="comando">sudo nano named.conf.local</p><br>
+            <p class="explicacion">Una vez abierto este archivo tendremos que añadir dos bloque de configuraciones
+                uno sera para el nombre del servidor y el otro bloque sera el de la zona inversa. <br>
+                Primero configuraremos el bloque del nombre del servidor. <br>
+            <p class="comando">zone "nombredetudominio.com"{<br>type master;<br>file "db.nombredetudominio.com"<br>};</p><br>
+            <p class="explicacion"> Ahora configuraremos la zona inversa, para esto utilizaremos de ejemplo la ip 
+                192.168.53.85<br>
+            <p class="comando"> zone "53.168.192.in-addr.arpa"{<br>type master;<br>file "db.192.168.53";<br>};<br></p>
+            <p class="explicacion"> Una vez echas esas configuraciones el fichero nos tiene que quedar de la 
+                siguiente manera</p>
+            <p class="comando">zone "nombredetudominio.com"{<br>type master;<br>file "db.nombredetudominio.com"<br>};<br><br><br>
+                zone "53.168.192.in-addr.arpa"{<br>type master;<br>file "db.192.168.53";<br>};<br></p>
+            <p class=explicacion> Una vez configurado el archivo named.conf.local iremos a la ruta /var/cache/bind
+            <p class="comando"> sudo cd /var/cache/bind</p>
+            <p class="explicacion">Una vez que estemos en esta ruta tendremos que crear los archivos que hemos indicado en el named.conf.local. 
+                Empezaremos por el del nombre de servidor.
+            <p class="comando"> sudo nano db.nombredetudominio.com</p>
+            <p class="explicacion">Una vez abierto este archivo lo mas probable es que este vacio y nosotros tendremos que escribir 
+                las siguientes lineas para configurar esa zona. Para este proceso debemos saber el nombre del servirdor.
+                Para conocer el nombre de este deberemos de ejecutar el comando <p class="comando">sudo nano /etc/hosts</p> <p class="explicacion">Y se mostrara el nombre de la maquina (localhost no el otro).
+
+        </p>
+    </main>
+</body>
+</html>
