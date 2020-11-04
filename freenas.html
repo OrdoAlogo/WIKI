@@ -28,7 +28,7 @@
             })
         });
     </script>
-    <body>
+    <body class="freenasBody">
         <header id="encabezado">
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
             <div class="titulo"><h1>WIKI PROX</h1></div>
@@ -58,21 +58,28 @@
            </ul>
         </nav>
           
-        <main>
+        <main class="freenasContenido">
+            <h1>Instalación, configuración y backups de FreeNAS.</h1>
 
-            <section>
+            <!-- Flexbox -->
+            <div id="contenedor"> 
+
+                <div class="item item-1">
+                    <a href="freenasInstall.html">
+                        <p>Instalación y configuración</p>
+                        <img src="img/instalar.png"  alt="instalar" id="instalar">
+                    </a>
+                </div> 
+
+                <div class="item item-2">
+                    <a href="freenasConf.html">
+                        <p>Backups</p>
+                        <img src="img/backup.png"   alt="backup" id="backup">
+                    </a>
+                </div>
                 
-                <h1>Instalación, configuración y backups de FreeNAS.</h1>
-                
-                <a href="freenasInstall.html">
-                    <p>Instalación y configuración</p>
-                    <img src="img/instalar.png"  alt="instalar" id="instalar">
-                </a>
-                <a href="freenasConf.html">
-                    <p>Backups</p>
-                    <img src="img/backup.png"   alt="backup" id="backup">
-                </a>
-            </section>
+            </div>
+
             
         </main>
         <div class="subir">

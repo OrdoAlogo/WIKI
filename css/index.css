@@ -1,12 +1,13 @@
-*{margin: 0;}
+
 /*Fuente descargada*/
 @font-face{
        font-family: fuenteWiki;
        src: url(../css/Schoolwork-Regular.ttf);
 }
-/* html{
-       font-size: 0.7rem;
-} */
+
+/* ----------------GENERAL---------------------- */
+
+*{margin: 0;}
 
 /*ENCABEZADO*/
 header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
@@ -64,6 +65,25 @@ ul li {
 .menuLetra:hover{color: white;}
 .icon-home,.icon-info{font-size: 20px;}
 
+/*ESTILOS DEL PIE DE PAGINA*/
+footer{margin: 0 auto; width: 100%; height: 100%; background: #B5700E; display: flex; flex-direction: row; align-items: center; justify-items: center;
+       justify-content:space-around;}
+footer p{color: white; text-align: center;}
+.rrss{display: flex; flex-direction: column; align-items: center;}
+.icon-facebook,.icon-instagram,.icon-youtube{font-size: 20px;}
+footer div a{text-decoration: none; padding: 3px;}
+.icon-facebook{color:#3167E5;}
+.icon-facebook:hover{background:#3167E5 ; color: white;}
+.icon-instagram{color: #B4299F;}
+.icon-instagram:hover{background: #B4299F; color: white;}
+.icon-youtube{color:red;}
+.icon-youtube:hover{background: red; color:white;}
+.contactos {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+.contactos div iframe{height: 100%; width: 100%;}
+
+/* ----------------INDEX---------------------- */
+
+
 /*ESTILOS DE LA PARTE PRINCIPAL*/
 .main{margin: 0 auto; width: 100%;}
 .portada{height: 500px; background-image: url(../img/wall.png); background-size: cover;background-attachment:scroll; margin: 0 auto;
@@ -108,21 +128,68 @@ marquee span{color: #C0BD8D;}
 }
 
 
-/*ESTILOS DEL PIE DE PAGINA*/
-footer{margin: 0 auto; width: 100%; height: 100%; background: #B5700E; display: flex; flex-direction: row; align-items: center; justify-items: center;
-       justify-content:space-around;}
-footer p{color: white; text-align: center;}
-.rrss{display: flex; flex-direction: column; align-items: center;}
-.icon-facebook,.icon-instagram,.icon-youtube{font-size: 20px;}
-footer div a{text-decoration: none; padding: 3px;}
-.icon-facebook{color:#3167E5;}
-.icon-facebook:hover{background:#3167E5 ; color: white;}
-.icon-instagram{color: #B4299F;}
-.icon-instagram:hover{background: #B4299F; color: white;}
-.icon-youtube{color:red;}
-.icon-youtube:hover{background: red; color:white;}
-.contactos {display: flex; flex-direction: row; justify-content: center; align-items: center;}
-.contactos div iframe{height: 100%; width: 100%;}
+
+/* ----------------freenas.html-------------------------------*/
+
+/* Flexbox */
+.freenasBody {
+       display: flex;
+       min-height: 100vh;
+       flex-direction: column;
+}
+
+.freenasContenido{
+       flex: 1;
+}
+
+
+#contenedor {
+       display: inline-flex;
+       width: 100%;
+       height: 70%;
+       flex-wrap: nowrap;  
+       flex-direction: row;
+       justify-content: center ;   
+}
+
+.item {
+       text-align: center;
+       border-style: solid ;
+       border-color: black;
+       border-width: 5px;
+       border-radius: 5px;
+       font-size: 1.5vw;
+       width: 20%;
+       height: auto;
+       margin: 1%;
+       padding: 1%;
+}
+
+.item a{
+       outline : none;
+       text-decoration: none;
+       color: black;
+}
+
+.item img{
+       height: 80%;
+       width: 80%;
+       margin-top: 5%;
+}
+
+/* ----------------TUTORIALES A-------------------------------*/
+
+
+
+
+/* ----------------TUTORIALES B-------------------------------*/
+
+
+
+
+
+
+/* ----------------------MEDIA QUERIES---------------------------- */
 
 /*DISEÑO EN TAMAÑO MOVIL*/
 @media screen and (max-width:500px){
