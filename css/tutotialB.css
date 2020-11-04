@@ -1,0 +1,189 @@
+
+body{
+  background-color: rgb(177, 169, 169);
+}
+main{
+  margin: 1%;
+     
+}
+
+article{
+  margin-top: 2%;
+}
+
+/* p{
+    font-size:2vw;
+} */
+span{
+    font-size: 2.5vw;
+}
+h1{
+  text-align: center;
+}
+
+#pasos{
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+
+#pasoFinalP{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#paso{
+  margin-left: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size:1vw;
+}
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+   
+    #pasos{
+        height: 30%;
+        width: 40%;
+      
+        
+    }
+    
+    #pasoFinalP{
+        height: 30%;
+        width: 40%;
+     
+    }
+    
+ 
+
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+ 
+   
+
+    #pasos{
+        height: 25%;
+        width: 35%;
+     
+        
+    }
+    
+    #pasoFinalP{
+        height: 20%;
+        width: 30%;
+     
+    }
+
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    #pasos{
+        height: 40%;
+        width: 40%;
+       
+        
+    }
+    
+    #pasoFinalP{
+        height: 20%;
+        width: 30%;
+      
+    }
+
+   
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    #pasos{
+        height: 30%;
+        width: 30%;
+       
+        
+    }
+    
+    #pasoFinalP{
+        height: 10%;
+        width: 20%;
+      
+    }
+
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    #pasos{
+        height: 70%;
+        width: 70%;
+       
+        
+    }
+    
+    #pasoFinalP{
+        height: 10%;
+        width: 20%;
+      
+    }
+    
+  }
+
+
+
+
+
+

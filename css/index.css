@@ -1,54 +1,72 @@
-*{margin: 0;}
+
+/*Fuente descargada*/
 @font-face{
-       font-family: fuentePropia;
+       font-family: fuenteWiki;
        src: url(../css/Schoolwork-Regular.ttf);
 }
-body{}
-/*ENCABEZADO*/
-header{display: flex; justify-content:space-between; flex-direction: row; background: grey; justify-items: center;}
-.titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
-.titulo h1{font-family: fuentePropia; font-size: 7rem;}
 
-.logo{padding: 10px;}
-.logo img{border-radius: 15px;}
+/* ----------------GENERAL---------------------- */
+
+*{margin: 0;}
+
+/*ENCABEZADO*/
+header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
+.titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
+.titulo h1{font-family: 'Inconsolata', monospace; font-size: 7rem; color: #32281B; position: relative; display: block; padding: 5px; }
+/*Efecto subrayado del titulo del encabezado*/
+.titulo h1::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
+       background: linear-gradient(to right,#B5700E, #32281B ,#B5700E);
+       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;}
+.titulo h1:hover::before{ transform: scaleX(1);}
+.titulo[data-animation="center"] h1::before { transform-origin: center;} 
+.titulo[data-animation="center"] h1:hover::before { transform-origin: center; transform: scaleX(1);
+       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);}
+
+
+.logo{padding: 10px; margin-left: 20px; margin-top: 20px;}
+.logo:hover img{-webkit-transform: scale(1.1); box-shadow: 0px 0px 0px 0px;}
+.logo img{border-radius: 15px; height: 70px;}
+
+/* img:hover{-webkit-transform: scale(0.7); box-shadow: 0px 0px 15px 15px#B5700E;} */
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
-nav{margin: 0 auto; width: 100%; background: grey; }
-ul{background: black; display: flex; width: 80%; margin: 0 auto; text-align: center; }
-ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
-ul li a{ text-decoration: none; color: white;  font-size: 2rem; font-family: fuentePropia; padding: 5px; border-radius: 5px; }
+nav{margin: 0 auto; width: 100%; background: #8A662A; padding-bottom: 1%; }
+ul{background:#8A662A; display: flex; width: 80%; margin: 0 auto; text-align: center; }
+ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 10px;}
+ul li a{ text-decoration: none; color: white;  font-size:  1.8rem; font-family: 'Inconsolata', monospace; border-radius: 5px; }
+ul li a:hover{color: #B5700E; background: #32281B; }
 
-ul li a:hover{color: #393738; background: white;}
-.menuLetra{display: none;cursor: pointer; font-family: fuentePropia; font-size: 20px;}
+ul ul {
+display:none;
+position:absolute;
+/*top:100%;
+left:0; 
+padding:0;
+width:auto;
+z-index: +1; */
+}
+
+ul ul a{
+       font-size:  1.2rem;
+}
+ 
+ul li:hover > ul {
+       display:block;  
+}
+
+ul li {
+       position:relative;
+} 
+
+.menuLetra{display: none;cursor: pointer; font-family: 'Inconsolata', monospace;;}
 .icon-menu{display: none; } 
-.icon-cross{display: none;} 
-.icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 20px;}
+.icon-cross{display: none; } 
+.icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 10px;}
 .menuLetra:hover{color: white;}
-
-/*ESTILOS DE LA PARTE PRINCIPAL*/
-.main{margin: 0 auto; width: 100%;}
-.portada{height: 500px; background-image: url(../img/aulasC.jpg); background-size: cover;background-attachment:scroll; margin: 0 auto;
-       display: flex; align-items: center; justify-items: center; justify-content: center;}
-.portada h1{ text-align: center; font-size: 10rem; color: white; font-family: fuentePropia;}
-h3{font-family: fuentePropia; font-size: 3rem;}
-h2{font-family: fuentePropia; font-size: 4rem;}
-.subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
-              margin: 0 auto; width: 100%;}
-.subPortada article{ background: white; width: 100%; margin: 2%;}
-.subPortada article p{text-align: justify; padding: 5px;}
-.subPortada article h3{text-align: center;}
-/* img:hover{opacity: 0.5;} */
-.uno,.dos,.tres{display: flex; flex-direction: row; align-items: center; justify-items: center; padding: 10px;}
-.uno div img,.dos div img,.tres div img{display: block; margin: 0 auto; width: 100%;}
-
-#proxmox,#linux,#comandos{height: 550px; border-bottom: 3px solid black;}
-.subir{background: black; height: 70px; position: static;}
-.subir a {text-decoration: none; float: right; margin-right: 20px;}
-.subir a span{font-size: 20px; color: white;}
-.subir a span:hover{color: grey;}
+.icon-home,.icon-info{font-size: 20px;}
 
 /*ESTILOS DEL PIE DE PAGINA*/
-footer{margin: 0 auto; width: 100%; height: 100px; background: black; display: flex; flex-direction: row; align-items: center; justify-items: center;
+footer{margin: 0 auto; width: 100%; height: 100%; background: #B5700E; display: flex; flex-direction: row; align-items: center; justify-items: center;
        justify-content:space-around;}
 footer p{color: white; text-align: center;}
 .rrss{display: flex; flex-direction: column; align-items: center;}
@@ -60,22 +78,145 @@ footer div a{text-decoration: none; padding: 3px;}
 .icon-instagram:hover{background: #B4299F; color: white;}
 .icon-youtube{color:red;}
 .icon-youtube:hover{background: red; color:white;}
+.contactos {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+.contactos div iframe{height: 100%; width: 100%;}
+
+/* ----------------INDEX---------------------- */
+
+
+/*ESTILOS DE LA PARTE PRINCIPAL*/
+.main{margin: 0 auto; width: 100%;}
+.portada{height: 500px; background-image: url(../img/wall.png); background-size: cover;background-attachment:scroll; margin: 0 auto;
+       display: flex; align-items: center; justify-items: center; justify-content: center;}
+.portada h1{ text-align: center; font-size: 4vw; color: red; font-family: 'Inconsolata', monospace; -webkit-text-stroke:0.25px rgb(58, 52, 52);}
+h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
+h2{font-family: 'Inconsolata', monospace; font-size: 4rem;}
+.subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
+              margin: 0 auto; width: 100%;}
+.subPortada article{ background: #C0BD8D; width: 100%; margin: 2%;}
+.subPortada article p{text-align: justify; padding: 5px;}
+.subPortada article h3{text-align: center;}
+/* img:hover{opacity: 0.5;} */
+.uno,.dos,.tres{display: flex; flex-direction: row; align-items: center; justify-items: center; padding: 10px;}
+.uno div img,.dos div img,.tres div img{display: block; margin: 0 auto; width: 100%;}
+
+.subir{background: #B5700E; height: 50px; position: static;}
+.subir a {text-decoration: none; float: right; margin-right: 20px;}
+.subir a span{font-size: 20px; color: white;}
+.subir a span:hover{color: #32281B;}
+
+.video_p{display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #32281B;}
+.video_p div h3{color: #C0BD8D; text-align: center; }
+.video_p div{  padding: 5px;}
+.video_p div p{position: relative; display: block; padding: 5px; text-align: center; color: white;}
+       /*Efectos de lineas parafos subrayados en seccion de Ciclos formativos*/
+.video_p div p::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
+       background: linear-gradient(to right, #C0BD8D, #B5700E, #C0BD8D);
+       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;}
+.video_p p:hover::before{ transform: scaleX(1);}
+.video_p[data-animation="bonus"] p::before { transform-origin: right;} 
+.video_p[data-animation="bonus"] p:hover::before { transform-origin: left; transform: scaleX(1);
+       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);}
+
+marquee{ display:flex; justify-items: center; align-items: center; height: 50px; background: #32281B; font-size: 30px; color: white; }
+marquee span{color: #C0BD8D;}
+
+#tuto{
+       outline : none;
+       text-decoration: none;
+       color: white;
+}
 
 
 
-/*TAMAÑO MOVIL*/
+/* ----------------freenas.html-------------------------------*/
+
+/* Flexbox */
+.freenasBody {
+       display: flex;
+       min-height: 100vh;
+       flex-direction: column;
+}
+
+.freenasContenido{
+       flex: 1;
+}
+
+
+#contenedor {
+       display: inline-flex;
+       width: 100%;
+       height: 70%;
+       flex-wrap: nowrap;  
+       flex-direction: row;
+       justify-content: center ;   
+}
+
+.item {
+       text-align: center;
+       border-style: solid ;
+       border-color: black;
+       border-width: 5px;
+       border-radius: 5px;
+       font-size: 1.5vw;
+       width: 20%;
+       height: auto;
+       margin: 1%;
+       padding: 1%;
+}
+
+.item a{
+       outline : none;
+       text-decoration: none;
+       color: black;
+}
+
+.item img{
+       height: 80%;
+       width: 80%;
+       margin-top: 5%;
+}
+
+/* ----------------TUTORIALES A-------------------------------*/
+
+
+
+
+/* ----------------TUTORIALES B-------------------------------*/
+
+
+
+
+
+
+/* ----------------------MEDIA QUERIES---------------------------- */
+
+/*DISEÑO EN TAMAÑO MOVIL*/
 @media screen and (max-width:500px){
 /*MENU*/
 ul li {border-bottom:1px solid white; display: block; text-align: left;}
-nav ul{left: -1500px; display: block; background: #393738; height: 0px; position:absolute;}
-.icon-menu{display: block;}
-.menuLetra{display: block;}
+nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
+.icon-menu{display: block; font-size: 25px;}
+.icon-cross{font-size: 25px;}
+.menuLetra{display: block; font-size: 30px;}
 
 /*MAIN*/
 .subPortada{flex-direction: column;}
 .uno,.dos,.tres{flex-direction: column;}
+.portada h1{font-size: 7vw;}
+.video_p div iframe{width: 100%;}
+
 /*PIE DE PAGINA*/
 footer{flex-direction: column-reverse; justify-content: space-between;}
 .rrss{flex-direction: row;}
 
+}
+/*DISEÑO EN TAMAÑO TABLETA*/
+@media screen and (max-width:900px){
+       /*MAIN*/
+       .portada h1{font-size: 10vw;}
+       .uno,.dos,.tres{flex-direction: column;} 
+       
+       .video_p{flex-direction: column; justify-content: center;}
+      
 }
