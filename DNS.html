@@ -11,7 +11,7 @@
 
     </header>
     <main>
-        <p class="expliacion">Teniendo el ubuntu server instalado o cualquier otro sistema linux 
+        <p class="explicacion">Teniendo el ubuntu server instalado o cualquier otro sistema linux 
             podemos instalar un servicio DNS para traducir nuestras direcciones  a el nombre 
             deseado y no tener que acordarnos de la ip completa. <br>
             Primero tendremos que instalar el bind 9 con la siguiente linea <br>
@@ -40,8 +40,24 @@
             <p class="comando"> sudo nano db.nombredetudominio.com</p>
             <p class="explicacion">Una vez abierto este archivo lo mas probable es que este vacio y nosotros tendremos que escribir 
                 las siguientes lineas para configurar esa zona. Para este proceso debemos saber el nombre del servirdor.
-                Para conocer el nombre de este deberemos de ejecutar el comando <p class="comando">sudo nano /etc/hosts</p> <p class="explicacion">Y se mostrara el nombre de la maquina (localhost no el otro).
-
+                <br> Para conocer el nombre de este deberemos de ejecutar el comando <a class="comando">sudo nano /etc/hosts</a> Y se mostrara el nombre de la maquina (localhost no el otro).
+                <br> Una vez que sabemos el nombre del servidor comenzaremos a configurar la zona, para esta configuracion utilizaremos la ip de antes y como nombre del servidor server.
+                Al final de la configuracion el fichero tiene que terminar de la siguiente manera -->
+            <p class="comando">$ORIGIN server.nombredetudominio.com.  #El punto del final de cada direccion es importante<br> $$TTL 86400; <br>
+             @ IN SOA server.nombredetudominio.com. info.nombredetudominio.com. (<br>  2020070801 ; <br> 6H ;<br>1H;<br>2W; <br>3H; <br> ) <br> @        IN       NS      server <br>
+            @       IN      A       192.168.53.85 <br>server       IN      A        192.168.53.85 <br> www      IN      A       192.168.53.85</p>
+            <p class="explicacion"> Ahora tenemos que hacer algo parecido pero con la zona inversa, para eso tenemos que crear el otro archivo que hemos indicado en el named.conf.local 
+            <p class="comando">sudon nano db.192.168.53</p><br>
+            <p class="explicacion">Una vez entramos en este archivo, probablemente tambien estara vacio y tendremos que hacer la siguiente configuracion -->
+            <p class="comando"> $ORIGIN 53.168.192.in-addr.arpa. <br> $TTL 86400; <br> @ IN SOA server.nombredetudominio.com. info.nombredetudominio.com. ( <br> 
+                2020042501 ; <br> 6H;; <br> 1H; <br> 2W; <br> 3H; <br> @        IN      NS         server.nombredetudominio.com. <br> 85        IN      PTR     server.nombredetudominio.com. </p>
+            <p class="explicacion"> Una vez configurado este archivo reiniciaremos el servidor dns con el siguiente comando
+            <p class="comando">systemctl restart bind9</p>
+            <p class="explicacion"> Una vez configurado probaremos el dns con la siguiente linea
+            <p class="comando">nslookup nombredetudominio.com</p>
+            <p class="explicacion"> Este comando nos debera devolver algo parecido a esto
+            <p class="comando"> Server: 192.168.53.85 <br>Address: 192.168.53.85#53 <br><br><br>Name: nombredetudominio.com <br>Address: 192.168.53.85 <br>
+            <p class="explicacion"> El servidor esta configurado
         </p>
     </main>
 </body>
