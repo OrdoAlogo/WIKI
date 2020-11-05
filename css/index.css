@@ -186,7 +186,29 @@ marquee span{color: #C0BD8D;}
 
 /* ----------------TUTORIALES A-------------------------------*/
 
+.tutorialA main{
+       padding: 2em;
+}
 
+.tutorialA {
+       background-color: grey;
+}
+
+.comando,.explicacion {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 2vW;
+       width: 100%;
+}
+.comando{ 
+       border: 0.1em solid black ;
+       background-color: rgb(216, 214, 214);
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-weight: bold;
+}
+.imagen{
+       width: 25%;
+       height: 19%;;
+}
 
 
 /* ----------------TUTORIALES B-------------------------------*/
