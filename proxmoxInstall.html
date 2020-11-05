@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>WIKI | LINUX</title>
+        <title>WIKI | PROXMOX</title>
         <link class="logo" rel="icon" type="image/vnd.microsoft.icon" href="img/txurdi_logo.jpg">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/tutotialB.css">
         <link rel="stylesheet" type="text/css" href="css/fuentes-iconos/style.css"> 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <!--SCRIPT PAR EL MENÚ-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
-    
-    <body class="contenidoBody">
+    <script src="../WIKI/miJS/wikiJ.js"> </script>
+   
+    <body class="tutorialB">
         <header id="encabezado">
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
             <div class="titulo"><h1>WIKI PROX</h1></div>
@@ -26,37 +28,48 @@
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
+        <main>
 
-        <main class="tutorialesContenido">
+            <section>
+                
+                <h1>Instalación y configuración de Proxmox.</h1>
+                <article class="pasos paso2">
 
-            <h1>Instalación y configuración del servidor.</h1>
-            <!-- Flexbox -->
-            <div id="contenedor"> 
+                    <p id="paso"><span> 1-</span> Seleccionaremos el disco en el que deseamos instalarlo.</p>
+                    <img src="img/proxmox/paso2.png" alt="paso2" id="pasoFoto">
 
-                <div class="item item-1">
-                    <a href="SSH.html">
-                        Configuración SSH
-                        <img src="img/instalar.png"  alt="instalar" id="instalar">
-                    </a>
-                </div> 
+                </article>
+                <article class="pasos paso3">
 
-                <div class="item item-2">
-                    <a href="ftp.html">
-                        Configuracion FTP
-                        <img src="img/backup.png"   alt="backup" id="backup">
-                    </a>
-                </div>
+                    <p id="paso"><span> 2-</span> Seleccionamos el país y distribucion de teclado.</p>
+                    <img src="img/proxmox/paso3.png" alt="paso3" id="pasoFoto">
 
-                <div class="item item-3">
-                    <a href="ftp.html">
-                        Configuracion DNS
-                        <img src="img/backup.png"   alt="backup" id="backup">
-                    </a>
-                </div>                
-            </div>
-              
+                </article>
+                <article class="pasos paso4">
+
+                    <p id="paso"><span> 3-</span> Introducimos un correo y le damos una contraseña.</p>
+                    <img src="img/proxmox/paso4.png" alt="paso4" id="pasoFoto">
+
+                </article>
+                <article class="pasos paso5">
+
+                    <p id="paso"><span> 4-</span> Configuramos la red. Le damos un nombre al host, una ip, mascara y DNS.</p>
+                    <img src="img/proxmox/paso5.png" alt="paso5" id="pasoFoto">
+
+                </article>
+                <article class="pasos paso6">
+
+                    <p id="paso"><span> 5-</span> Una vez instalado, podrás acceder al interfaz mediante la ip que se muestre.</p>
+                    <img src="img/proxmox/paso6.png" alt="paso6" id="pasoFinalP">
+
+                </article>
+
+            </section>
+            
         </main>
-        
+        <div class="subir">
+            <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
+        </div>
         <footer id="contacto">
             <div class="rrss">
                 <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
@@ -68,8 +81,7 @@
                 <p>Grupo 2 Castellano - FPTxurdinaga 2020</p>
                 <p>Tel contacto: 94 444 444 444</p>
             </div>
-        
-            </div>
+            
         </footer>
     </body>
 </html>

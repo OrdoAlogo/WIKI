@@ -1,4 +1,4 @@
-main{
+.tutorialA main{
     padding: 2em;
 }
 .comando,.explicacion {
@@ -16,6 +16,6 @@ main{
     width: 25%;
     height: 19%;;
 }
-body{
-    background-color: grey;;
+.tutorialA {
+    background-color: grey;
 }
