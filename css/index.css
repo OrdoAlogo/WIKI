@@ -81,7 +81,7 @@ footer div a{text-decoration: none; padding: 3px;}
 .contactos {display: flex; flex-direction: row; justify-content: center; align-items: center;}
 .contactos div iframe{height: 100%; width: 100%;}
 
-/* ----------------INDEX---------------------- */
+/* ----------------index.html---------------------- */
 
 
 /*ESTILOS DE LA PARTE PRINCIPAL*/
@@ -128,7 +128,6 @@ marquee span{color: #C0BD8D;}
 }
 
 
-
 /* ----------------freenas.html-------------------------------*/
 
 /* Flexbox */
@@ -139,7 +138,14 @@ marquee span{color: #C0BD8D;}
 }
 
 .freenasContenido{
+       background-color: rgb(177, 169, 169);
        flex: 1;
+
+}
+
+.freenasContenido h1{
+       text-align: center;
+
 }
 
 
@@ -169,6 +175,7 @@ marquee span{color: #C0BD8D;}
        outline : none;
        text-decoration: none;
        color: black;
+       font-weight: bold;
 }
 
 .item img{
@@ -179,10 +186,74 @@ marquee span{color: #C0BD8D;}
 
 /* ----------------TUTORIALES A-------------------------------*/
 
+.tutorialA main{
+       padding: 2em;
+}
 
+.tutorialA {
+       background-color: grey;
+}
+
+.comando,.explicacion {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 2vW;
+       width: 100%;
+}
+.comando{ 
+       border: 0.1em solid black ;
+       background-color: rgb(216, 214, 214);
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-weight: bold;
+}
+.imagen{
+       width: 25%;
+       height: 19%;;
+}
 
 
 /* ----------------TUTORIALES B-------------------------------*/
+
+.tutorialB{
+       background-color: rgb(177, 169, 169);
+}
+.tutorialB main{
+       margin: 1%;
+       
+}
+
+.pasos{
+       margin-top: 2%;
+}
+
+.tutorialB span{
+       font-size: 2.5vw;
+}
+.tutorialB h1{
+       text-align: center;
+}
+
+#pasoFoto{
+
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       
+}
+
+#pasoFinalP{
+
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+#paso{
+       margin-left: 20%;
+       margin-top: 1%;
+       margin-bottom: 1%;
+       font-size:1vw;
+}
+
 
 
 
@@ -193,6 +264,9 @@ marquee span{color: #C0BD8D;}
 
 /*DISEÑO EN TAMAÑO MOVIL*/
 @media screen and (max-width:500px){
+
+ /* ---------GENERAL------- ----*/
+
 /*MENU*/
 ul li {border-bottom:1px solid white; display: block; text-align: left;}
 nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
@@ -200,19 +274,24 @@ nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; positio
 .icon-cross{font-size: 25px;}
 .menuLetra{display: block; font-size: 30px;}
 
+/*PIE DE PAGINA*/
+footer{flex-direction: column-reverse; justify-content: space-between;}
+.rrss{flex-direction: row;}
+
+/* -------index.html-------- */
 /*MAIN*/
 .subPortada{flex-direction: column;}
 .uno,.dos,.tres{flex-direction: column;}
 .portada h1{font-size: 7vw;}
 .video_p div iframe{width: 100%;}
 
-/*PIE DE PAGINA*/
-footer{flex-direction: column-reverse; justify-content: space-between;}
-.rrss{flex-direction: row;}
+
 
 }
 /*DISEÑO EN TAMAÑO TABLETA*/
 @media screen and (max-width:900px){
+
+/* ---------index.html----------- */
        /*MAIN*/
        .portada h1{font-size: 10vw;}
        .uno,.dos,.tres{flex-direction: column;} 
@@ -220,3 +299,140 @@ footer{flex-direction: column-reverse; justify-content: space-between;}
        .video_p{flex-direction: column; justify-content: center;}
       
 }
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+/* -----------TUTORIALES B--------------- */
+  
+       #pasoFoto{
+           height: 30%;
+           width: 40%;
+
+       }
+       
+       #pasoFinalP{
+           height: 30%;
+           width: 40%;
+        
+       }
+
+       
+     }
+     
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+/* -----------TUTORIALES B--------------- */
+   
+       #pasoFoto{
+           height: 25%;
+           width: 35%;
+        
+           
+       }
+       
+       #pasoFinalP{
+           height: 20%;
+           width: 30%;
+        
+       }
+   
+       
+       
+     
+}
+     
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+/* -----------TUTORIALES B--------------- */
+       #pasoFoto{
+           height: 40%;
+           width: 40%;
+          
+           
+       }
+       
+       #pasoFinalP{
+           height: 20%;
+           width: 30%;
+         
+       }
+   
+
+}
+     
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+      
+/* -----------TUTORIALES B--------------- */
+       #pasoFoto{
+           height: 30%;
+           width: 30%;
+          
+           
+       }
+       
+       #pasoFinalP{
+           height: 10%;
+           width: 20%;
+         
+       }
+   
+}
+     
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+     
+/* -----------TUTORIALES B--------------- */
+       #pasoFoto{
+           height: 70%;
+           width: 70%;
+          
+           
+       }
+       
+       #pasoFinalP{
+           height: 10%;
+           width: 20%;
+         
+       }
+       
+}
+
+
