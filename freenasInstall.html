@@ -39,21 +39,8 @@
            <ul>
             <li><a href="index.html"><span class="icon-home"></span></a></li>
             <li><a href="proxmox.html">Proxmox</a></li>
-            <li><a href="linux.html">Linux</a>
-                <ul>
-                    <li><a href="SSH.html">SSH</a></li>
-                    <li><a href="ftp.html">FTP</a></li>
-                   
-                </ul>
-            </li>
-            <li><a href="freenas.html">FreeNAS</a>
-                <ul>
-                    <li><a href="freenasInstall.html">Instalación</a></li>
-                    <li><a href="freenasConf.html">Backups</a></li>
-                </ul>
-            
-            </li>
-            <!-- <li><a href="comandos.html">Comandos Generales</a></li> -->
+            <li><a href="linux.html">Linux</a></li>
+            <li><a href="freenas.html">FreeNAS</a></li>
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
@@ -64,63 +51,35 @@
                 
                 <h1>Instalación y configuración basica de FreeNAS.</h1>
 
-                <article class="pasos paso1">
-                    <p id="paso"><span> 1-</span> Para poder realizar las copias de ubuntu, FreeNAS deberá estar instalado dentro de proxmox. 
-                        Para ello subiremos la iso desde la interfaz.</p>
-                    <img src="img/freenasInstall/paso1.png" alt="paso1" id="pasoFoto">
-                </article>
-                <article class="pasos paso2">
-                    <p id="paso"><span> 2-</span> Seleccionaremos el botón situado en el lado superior derecho.</p>
-                    <img src="img/freenasInstall/paso2.png" alt="paso2" id="pasoFoto">
-                </article>
-                <article class="pasos paso3">
-                    <p id="paso"><span> 3-</span> Nos aparecerá la siguiente ventana. Le damos un nombre e ID.</p>
-                    <img src="img/freenasInstall/paso3.png" alt="paso3" id="pasoFoto">
-                </article>
-                <article class="pasos paso4">
-                    <p id="paso"><span> 4-</span> Seleccionamos la iso del sistema.</p>
-                    <img src="img/freenasInstall/paso4.png" alt="paso4" id="pasoFoto">
-                </article>
-                <article class="pasos paso5">
-                    <p id="paso"><span> 5-</span> Le damos el espacio deseado al disco.</p>
-                    <img src="img/freenasInstall/paso5.png" alt="paso5" id="pasoFoto">
-                </article>
-                <article class="pasos paso6">
-                    <p id="paso"><span> 6-</span> Le damos la cantidad de núcleos.</p>
-                    <img src="img/freenasInstall/paso6.png" alt="paso6" id="pasoFoto">
-                </article>
-                <article class="pasos paso7">
-                    <p id="paso"><span> 7-</span> La cantidad de memoria ram.</p>
-                    <img src="img/freenasInstall/paso7.png" alt="paso7" id="pasoFoto">
-                </article>
-                <p>Una vez configurados todos los apartados de la ventana procederemos a iniciar y configurar la máquina.</p>
+    
+                <h2>Para realizar este tutorial partimos de una maquina virtual creada. Puede ver el tutorial <a href="proxmoxVM.html">aquí</a></h2>
                 <article class="pasos paso8">
-                    <p id="paso"><span> 8-</span> Seleccionamos Install/Upgrade.</p>
+                    <p id="paso"><span> 1-</span> Seleccionamos Install/Upgrade.</p>
                     <img src="img/freenasInstall/paso8.jpg" alt="paso8" id="pasoFoto">
                 </article>
                 <article class="pasos paso9">
-                    <p id="paso"><span> 9-</span> Elegimos el disco en el que freenas se instalará.</p>
+                    <p id="paso"><span> 2-</span> Elegimos el disco en el que freenas se instalará.</p>
                     <img src="img/freenasInstall/paso9.jpg" alt="paso9" id="pasoFoto">
                 </article>
                 <article class="pasos paso10">
-                    <p id="paso"><span> 10-</span> Seleccionamos Yes.</p>
+                    <p id="paso"><span> 3-</span> Seleccionamos Yes.</p>
                     <img src="img/freenasInstall/paso10.jpg" alt="paso10" id="pasoFoto">
                 </article>
                 <article class="pasos paso11">
-                    <p id="paso"><span> 11-</span> Una vez instalado reiniciamos el sistema.</p>
+                    <p id="paso"><span> 4-</span> Una vez instalado reiniciamos el sistema.</p>
                     <img src="img/freenasInstall/paso11.jpg" alt="paso11" id="pasoFoto">
                 </article>
                 <article class="pasos paso12">
-                    <p id="paso"><span> 12-</span> Una vez reiniciado aparecerá el siguiente menú.</p>
+                    <p id="paso"><span> 5-</span> Una vez reiniciado aparecerá el siguiente menú.</p>
                     <img src="img/freenasInstall/paso12.png" alt="paso12" id="pasoFoto">
                     <p>Al igual que en proxmox, este mostrará una ip para poder conectarse remotamente.</p>
                 </article>
                 <article class="pasos paso13">
-                    <p id="paso"><span> 13-</span> Si queremos configurar la ip y la máscara seleccionaremos la opción 1 y seguiremos los siguientes pasos.</p>
+                    <p id="paso"><span> 6-</span> Si queremos configurar la ip y la máscara seleccionaremos la opción 1 y seguiremos los siguientes pasos.</p>
                     <img src="img/freenasInstall/paso13.png" alt="paso13" id="pasoFoto">
                 </article>
                 <article class="pasos paso14">
-                    <p id="paso"><span> 14-</span> Si queremos configurar la DNS  seleccionaremos la opción 6 e introduciremos la DNS.</p>
+                    <p id="paso"><span> 7-</span> Si queremos configurar la DNS  seleccionaremos la opción 6 e introduciremos la DNS.</p>
                     <img src="img/freenasInstall/paso14.png" alt="paso14" id="pasoFoto">
                 </article>
 
