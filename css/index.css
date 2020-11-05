@@ -90,7 +90,7 @@ footer div a{text-decoration: none; padding: 3px;}
        display: flex; align-items: center; justify-items: center; justify-content: center;}
 .portada h1{ text-align: center; font-size: 4vw; color: red; font-family: 'Inconsolata', monospace; -webkit-text-stroke:0.25px rgb(58, 52, 52);}
 h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
-h2{font-family: 'Inconsolata', monospace; font-size: 4rem;}
+/* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
 .subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
               margin: 0 auto; width: 100%;}
 .subPortada article{ background: #C0BD8D; width: 100%; margin: 2%;}
@@ -128,26 +128,25 @@ marquee span{color: #C0BD8D;}
 }
 
 
-/* ----------------freenas.html-------------------------------*/
+/* ----------------freenas.html, proxmox.html, linux.html -------------------------------*/
 
 /* Flexbox */
-.freenasBody {
+
+.contenidoBody {
        display: flex;
        min-height: 100vh;
        flex-direction: column;
 }
 
-.freenasContenido{
+.tutorialesContenido{
        background-color: rgb(177, 169, 169);
        flex: 1;
 
 }
 
-.freenasContenido h1{
+.tutorialesContenido h1{
        text-align: center;
-
 }
-
 
 #contenedor {
        display: inline-flex;
@@ -183,6 +182,7 @@ marquee span{color: #C0BD8D;}
        width: 80%;
        margin-top: 5%;
 }
+
 
 /* ----------------TUTORIALES A-------------------------------*/
 
@@ -231,6 +231,13 @@ marquee span{color: #C0BD8D;}
 .tutorialB h1{
        text-align: center;
 }
+
+.tutorialB h2{
+       text-align: center;
+       font-size: 1vw;
+       margin-top: 1%;
+}
+
 
 #pasoFoto{
 
