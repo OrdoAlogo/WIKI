@@ -59,12 +59,25 @@
         </nav>
           
         <main>
-
-            <section>
+            <h1>Instalación y configuración de FTP.</h1>
                 
-                <h1>Instalación y configuración de FTP.</h1>
-                
-            </section>
+         <p class="explicacion"> 
+            Teniendo el ubuntu server instalado o cualquier otro sistema linux podemos instalar un servicio FTP para acceder y almacenar información desde otro ordenador <br>
+            Lo primero que tendremos que hacer será instalar el servicio:
+         <p class="comando">sudo apt-get install vsftpd</p>
+         <p class="expliacion">Después de instalarlo tendremos que irnos al fichero de configuración y cambiar las siguientes líneas:
+            Para acceder al fichero de configuración:
+         <p class="comando">sudo nano /etc/vsftpd.conf</p>
+         <p class="expliacion">Tendremos que descomentar las siguientes líneas. 
+         <p class="comando">write_enable=YES <br>local_umask=022<br>chroot_local_user=YES</p>
+         <p class=explicacion> Una vez descomentadas esas lineas tendremos que escribir las siguientes lineas
+         <p class="comando">allow_writeable_chroot=YES <br>pasv_enable=Yes <br>pasv_min_port=40000 <br>pasv_max_port=40100</p>
+         <p class="explicacion">Una vez realizados estos pasos tendremos que reiniciar el servicio
+         <p class="comando">sudo service vsftpd restart</p>
+         <p class="expliacion">Para finalizar comprobaremos que ese servicio está activo y funcionando
+         <p class="comando">systemctl status vsftpd</p>
+         <p class="explicacion"> Felicidades tu FTP esta configurado</p>
+         </p>
             
         </main>
         <div class="subir">
