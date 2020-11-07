@@ -1,33 +1,42 @@
 
-/*Fuente descargada*/
-@font-face{
-       font-family: fuenteWiki;
-       src: url(../css/Schoolwork-Regular.ttf);
-}
-
 /* ----------------GENERAL---------------------- */
 
 *{margin: 0;}
 
+h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
+/* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
+
 /*ENCABEZADO*/
-header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
-.titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
-.titulo h1{font-family: 'Inconsolata', monospace; font-size: 7rem; color: #32281B; position: relative; display: block; padding: 5px; }
+header{
+       display: flex;
+       justify-content:space-between;
+       flex-direction: row;
+       background: #8A662A;
+       justify-items: center;
+}
+.titulo{
+       margin: auto;
+       text-align: center;
+       margin-top: 30px;
+}
+.titulo h1{
+       font-family: 'Inconsolata', monospace; 
+       color: #32281B;
+       font-size: 7vw;
+       position: relative;
+       display: block;
+       padding: 5px;
+}
 /*Efecto subrayado del titulo del encabezado*/
 .titulo h1::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
-       background: linear-gradient(to right,#B5700E, #32281B ,#B5700E);
-       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;}
+       background: linear-gradient(to right,#B5700E, #32281B ,#B5700E);z-index: 1; transform: scaleX(0);
+       transform-origin: left; transition: transform 0.5s ease-in-out;
+}
 .titulo h1:hover::before{ transform: scaleX(1);}
 .titulo[data-animation="center"] h1::before { transform-origin: center;} 
 .titulo[data-animation="center"] h1:hover::before { transform-origin: center; transform: scaleX(1);
-       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);}
-
-
-.logo{padding: 10px; margin-left: 20px; margin-top: 20px;}
-.logo:hover img{-webkit-transform: scale(1.1); box-shadow: 0px 0px 0px 0px;}
-.logo img{border-radius: 15px; height: 70px;}
-
-/* img:hover{-webkit-transform: scale(0.7); box-shadow: 0px 0px 15px 15px#B5700E;} */
+       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
 nav{margin: 0 auto; width: 100%; background: #8A662A; padding-bottom: 1%; }
@@ -35,40 +44,45 @@ ul{background:#8A662A; display: flex; width: 80%; margin: 0 auto; text-align: ce
 ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 10px;}
 ul li a{ text-decoration: none; color: white;  font-size:  1.8rem; font-family: 'Inconsolata', monospace; border-radius: 5px; }
 ul li a:hover{color: #B5700E; background: #32281B; }
-
 ul ul {
-display:none;
-position:absolute;
+       display:none;
+       position:absolute;
 /*top:100%;
 left:0; 
 padding:0;
 width:auto;
 z-index: +1; */
 }
-
 ul ul a{
        font-size:  1.2rem;
 }
- 
 ul li:hover > ul {
        display:block;  
 }
-
 ul li {
        position:relative;
 } 
 
-.menuLetra{display: none;cursor: pointer; font-family: 'Inconsolata', monospace;;}
-.icon-menu{display: none; } 
-.icon-cross{display: none; } 
-.icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 10px;}
-.menuLetra:hover{color: white;}
+/* Icono 3 barras menu desplegable movil */
+.icon-menu{display: none;}
 .icon-home,.icon-info{font-size: 20px;}
 
 /*ESTILOS DEL PIE DE PAGINA*/
-footer{margin: 0 auto; width: 100%; height: 100%; background: #B5700E; display: flex; flex-direction: row; align-items: center; justify-items: center;
-       justify-content:space-around;}
-footer p{color: white; text-align: center;}
+footer{margin: 0 auto; 
+       width: 100%; 
+       height: 100%; 
+       background: #B5700E; 
+       display: flex; 
+       flex-direction: row; 
+       align-items: center; 
+       justify-items: center;
+       justify-content:space-around;
+}
+footer p{
+       color: white; 
+       text-align: center;
+       font-size: 20px;
+}
 .rrss{display: flex; flex-direction: column; align-items: center;}
 .icon-facebook,.icon-instagram,.icon-youtube{font-size: 20px;}
 footer div a{text-decoration: none; padding: 3px;}
@@ -82,64 +96,75 @@ footer div a{text-decoration: none; padding: 3px;}
 .contactos div iframe{height: 100%; width: 100%;}
 
 #contacto {
-       padding-top: 0.5%;
+       padding-top: 2%;
+       padding-bottom: 1%;
 }
-.subir{
-       background: #B5700E;
-       height: 50px;
-       position: static;
-       margin-left: 0%;
-       display: flex; 
-}
-.subir a {
-       text-decoration: none;
-       float: right; 
-}
-.subir a span{
-       font-size: 20px; 
-       color: white;
-}
-.subir a span:hover{
-       color: #32281B;
-}
-
 /* ----------------index.html---------------------- */
 
 
 /*ESTILOS DE LA PARTE PRINCIPAL*/
-.main{margin: 0 auto; width: 100%;}
-.portada{height: 500px; background-image: url(../img/wall.png); background-size: cover;background-attachment:scroll; margin: 0 auto;
-       display: flex; align-items: center; justify-items: center; justify-content: center;}
-.portada h1{ text-align: center; font-size: 4vw; color: red; font-family: 'Inconsolata', monospace; -webkit-text-stroke:0.25px rgb(58, 52, 52);}
-h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
-/* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
-.subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
-              margin: 0 auto; width: 100%;}
-.subPortada article{ background: #C0BD8D; width: 100%; margin: 2%;}
-.subPortada article p{text-align: justify; padding: 5px;}
-.subPortada article h3{text-align: center;}
-/* img:hover{opacity: 0.5;} */
-.uno,.dos,.tres{display: flex; flex-direction: row; align-items: center; justify-items: center; padding: 10px;}
-.uno div img,.dos div img,.tres div img{display: block; margin: 0 auto; width: 100%;}
+.main{
+       margin: 0 auto; 
+       width: 100%;
+}
+.portada{
+       height: 500px;
+       background-image: url(../img/wall.png);
+       background-size: cover;
+       background-attachment:scroll;
+       margin: 0 auto;
+       display: flex;
+       align-items: center;
+       justify-items: center;
+       justify-content: center;
+}
+.portada h1{ 
+       text-align: center; 
+       font-size: 4vw; 
+       color:#aedf27; 
+       font-family: 'Inconsolata', monospace; 
+       -webkit-text-stroke:0.25px rgb(58, 52, 52);
+}
 
-
-
-.video_p{display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #32281B;}
-.video_p div h3{color: #C0BD8D; text-align: center; }
+.video_p{
+       background-color: #32281B;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       padding-bottom: 1%;
+}
+.video_p div h3{
+       color: #C0BD8D;
+       text-align: center;
+       font-size: 35px; 
+}
 .video_p div{  padding: 5px;}
 .video_p div p{position: relative; display: block; padding: 5px; text-align: center; color: white;}
-       /*Efectos de lineas parafos subrayados en seccion de Ciclos formativos*/
-.video_p div p::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
+.nTutoriales{
+       width: 30%;
+}
+/*Efectos de lineas */
+/* .video_p div p::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
        background: linear-gradient(to right, #C0BD8D, #B5700E, #C0BD8D);
-       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;}
+       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;} 
 .video_p p:hover::before{ transform: scaleX(1);}
 .video_p[data-animation="bonus"] p::before { transform-origin: right;} 
 .video_p[data-animation="bonus"] p:hover::before { transform-origin: left; transform: scaleX(1);
-       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);}
+       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);} */
 
-marquee{ display:flex; justify-items: center; align-items: center; height: 50px; background: #32281B; font-size: 30px; color: white; }
-marquee span{color: #C0BD8D;}
-
+marquee{ 
+       display:flex;
+       justify-items: center;
+       align-items: center; 
+       height: 50px; 
+       background: #32281B;
+       font-size: 30px; 
+       color: white; 
+}
+marquee span{
+       color: #C0BD8D;
+}
 #tuto{
        outline : none;
        text-decoration: none;
@@ -270,235 +295,267 @@ marquee span{color: #C0BD8D;}
 .flechas{
        display: inline-block;
        margin: 0 auto;
+       cursor: pointer;
 }
 
 .tutorialB{
        background-color: rgb(177, 169, 169);
        padding: 1%;
 }
-/* .tutorialB main{
-       margin: 1%;
-       
-} */
-
 .tutorialB span{
        font-size: 2.5vw;
 }
-
 .tutorialB h1{
        text-align: center;
 }
-
 .tutorialB h2{
        text-align: center;
        font-size: 1vw;
        margin-top: 1%;
 }
 
-/* .pasos{
-       margin-top: 2%;
-}
-
-#pasoFoto{
-
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       
-}
-
-#pasoFinalP{
-
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-}
-
-*/
-
-
-
-
-
-
-
 
 
 /* ----------------------MEDIA QUERIES---------------------------- */
 
-/*DISEÑO EN TAMAÑO MOVIL*/
-@media screen and (max-width:500px){
 
- /* ---------GENERAL------- ----*/
-
-/*MENU*/
-ul li {border-bottom:1px solid white; display: block; text-align: left;}
-nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
-.icon-menu{display: block; font-size: 25px;}
-.icon-cross{font-size: 25px;}
-.menuLetra{display: block; font-size: 30px;}
-
-/*PIE DE PAGINA*/
-footer{flex-direction: column-reverse; justify-content: space-between;}
-.rrss{flex-direction: row;}
-.subir{
-       margin-left: 90%;
-}
-
-/* -------index.html-------- */
-/*MAIN*/
-.subPortada{flex-direction: column;}
-.uno,.dos,.tres{flex-direction: column;}
-.portada h1{font-size: 7vw;}
-.video_p div iframe{width: 100%;}
-
-
-
-}
-/*DISEÑO EN TAMAÑO TABLETA*/
-@media screen and (max-width:900px){
-
-/* ---------index.html----------- */
-       /*MAIN*/
-       .portada h1{font-size: 10vw;}
-       .uno,.dos,.tres{flex-direction: column;} 
-       
-       .video_p{flex-direction: column; justify-content: center;}
-      
-}
-
-
-
-/* 
+/*------------------------------------------------- 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
-*/
+-------------------------------------------------*/
 
 @media (min-width: 1281px) {
 
-/* -----------TUTORIALES B--------------- */
-  
-       #pasoFoto{
-           height: 30%;
-           width: 40%;
 
-       }
-       
-       #pasoFinalP{
-           height: 30%;
-           width: 40%;
-        
-       }
+
 
        
      }
      
-/* 
+/*------------------------------------------ 
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
-*/
+------------------------------------------*/
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     
-/* -----------TUTORIALES B--------------- */
-   
-       #pasoFoto{
-           height: 25%;
-           width: 35%;
-        
-           
-       }
-       
-       #pasoFinalP{
-           height: 20%;
-           width: 30%;
-        
-       }
-   
+.portada{
+       height:400px;
+}
+.video_p div iframe{
+       width: 600px;
+       height: 350px;
+       margin-right: 5%;
+}
+.nTutoriales{
+       width: 30%;
+       font-size: 15px;
+}
+
+
+.video_p div h3{
+       font-size: 25px; 
+}
        
        
      
 }
      
-/* 
+/*--------------------------------------
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
-*/
+---------------------------------------*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
     
-/* -----------TUTORIALES B--------------- */
-       #pasoFoto{
-           height: 40%;
-           width: 40%;
-          
-           
-       }
-       
-       #pasoFinalP{
-           height: 20%;
-           width: 30%;
-         
-       }
-   
+/* ---------GENERAL------- ----*/
+.titulo{
+       margin: auto;
+}
+.titulo h1{
+       font-size: 15vw;
+}
+/*MENU*/
+ul li {border-bottom:1px solid white; display: block; text-align: left;}
+nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
+.icon-menu{
+       margin-top: 3%;
+       margin-left: 2%;
+       display: block; 
+       font-size: 15vw;
+}
+
+/*FOOTER*/
+
+.rrss{
+       flex-direction: column;
+      
+}
+/* -------index.html-------- */
+/*MAIN*/
+.portada{
+       height:300px;
+}
+.portada h1{
+       font-size: 7vw;
+} 
+marquee{
+       font-size: 20px;
+}
+.video_p div iframe{
+       width: 700px;
+       height: 350px;
+}
+.nTutoriales{
+       width: 80%;
+       font-size: 20px;
+}
+.video_p{
+       flex-direction: column;
+       justify-content: center;
+}
 
 }
      
-/* 
+/* ------------------------------------
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
-*/
+--------------------------------------*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-
-
-
 }
 
-/* 
+/*---------------------------------------------------- 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
-*/
+----------------------------------------------------*/
 
 @media (min-width: 481px) and (max-width: 767px) {
       
-/* -----------TUTORIALES B--------------- */
-       #pasoFoto{
-           height: 30%;
-           width: 30%;
-          
-           
-       }
-       
-       #pasoFinalP{
-           height: 10%;
-           width: 20%;
-         
-       }
+
+/* ---------GENERAL------- ----*/
+.titulo{
+       margin: auto;
+}
+.titulo h1{
+       font-size: 15vw;
+}
+/*MENU*/
+ul li {border-bottom:1px solid white; display: block; text-align: left;}
+nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
+.icon-menu{
+       margin-top: 3%;
+       margin-left: 2%;
+       display: block; 
+       font-size: 15vw;
+}
+
+/*FOOTER*/
+footer{
+       flex-direction: column-reverse; 
+       justify-content: space-between;
+}
+.rrss{
+       flex-direction: row;
+       margin-bottom: 2%;
+}
+.info{
+       margin-bottom: 2%;
+}
+.contactos{
+       margin-bottom: 2%;
+}
+
+/* -------index.html-------- */
+/*MAIN*/
+.portada{
+       height:200px;
+}
+.portada h1{
+       font-size: 7vw;
+} 
+marquee{
+       font-size: 20px;
+}
+.video_p div iframe{
+       width: 100%;
+       height: 80%;
+}
+.nTutoriales{
+       width: 80%;
+}
+.video_p{
+       flex-direction: column;
+       justify-content: center;
+}
+
    
 }
      
-/* 
+/* ---------------------------------------------------
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
-*/
+----------------------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 480px) {
      
-/* -----------TUTORIALES B--------------- */
-       #pasoFoto{
-           height: 70%;
-           width: 70%;
-          
-           
-       }
-       
-       #pasoFinalP{
-           height: 10%;
-           width: 20%;
-         
-       }
+/* ---------GENERAL------- ----*/
+.titulo{
+       margin: auto;
+}
+.titulo h1{
+       font-size: 15vw;
+}
+/*MENU*/
+ul li {border-bottom:1px solid white; display: block; text-align: left;}
+nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
+.icon-menu{
+       margin-top: 3%;
+       margin-left: 2%;
+       display: block; 
+       font-size: 15vw;
+}
+
+/*FOOTER*/
+footer{
+       flex-direction: column-reverse; 
+       justify-content: space-between;
+}
+.rrss{
+       flex-direction: row;
+       margin-bottom: 2%;
+}
+.info{
+       margin-bottom: 2%;
+}
+.contactos{
+       margin-bottom: 2%;
+}
+
+/* -------index.html-------- */
+/*MAIN*/
+.portada{
+       height:150px;
+}
+.portada h1{
+       font-size: 7vw;
+} 
+marquee{
+       font-size: 20px;
+}
+.video_p div iframe{
+       width: 100%;
+       height: 80%;
+}
+.nTutoriales{
+       width: 100%;
+}
+.video_p{
+       flex-direction: column;
+       justify-content: center;
+}
+
        
 }
 
