@@ -28,7 +28,7 @@
             })
         });
     </script>
-    <body class="tutorialB">
+    <body>
         <header id="encabezado">
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
             <div class="titulo"><h1>WIKI PROX</h1></div>
@@ -45,53 +45,35 @@
            </ul>
         </nav>
           
-        <main>
+        <main class="tutorialB">
 
-            <section>
+            <h1>Instalación y configuración basica de FreeNAS.</h1>
+            <h2>Para realizar este tutorial partimos de una maquina virtual creada. Puede ver el tutorial <a href="proxmoxVM.html">aquí</a></h2>
+            <div class="containerTutorialB" id="tutorialBFreenasInstall">
                 
-                <h1>Instalación y configuración basica de FreeNAS.</h1>
+                <div class="containerFoto">
+                    <img  src="img/freenasInstall/paso8.jpg" alt="paso8" id="fotoB" >
+                    <div class="flechas">
+                        <img  src="img/anterior.png" alt="anterior" id="anterior" >
+                        <img  src="img/siguiente.png" alt="siguiente" id="siguiente" >
+                    </div>
+                </div>
 
-    
-                <h2>Para realizar este tutorial partimos de una maquina virtual creada. Puede ver el tutorial <a href="proxmoxVM.html">aquí</a></h2>
-                <article class="pasos paso8">
-                    <p id="paso"><span> 1-</span> Seleccionamos Install/Upgrade.</p>
-                    <img src="img/freenasInstall/paso8.jpg" alt="paso8" id="pasoFoto">
-                </article>
-                <article class="pasos paso9">
-                    <p id="paso"><span> 2-</span> Elegimos el disco en el que freenas se instalará.</p>
-                    <img src="img/freenasInstall/paso9.jpg" alt="paso9" id="pasoFoto">
-                </article>
-                <article class="pasos paso10">
-                    <p id="paso"><span> 3-</span> Seleccionamos Yes.</p>
-                    <img src="img/freenasInstall/paso10.jpg" alt="paso10" id="pasoFoto">
-                </article>
-                <article class="pasos paso11">
-                    <p id="paso"><span> 4-</span> Una vez instalado reiniciamos el sistema.</p>
-                    <img src="img/freenasInstall/paso11.jpg" alt="paso11" id="pasoFoto">
-                </article>
-                <article class="pasos paso12">
-                    <p id="paso"><span> 5-</span> Una vez reiniciado aparecerá el siguiente menú.</p>
-                    <img src="img/freenasInstall/paso12.png" alt="paso12" id="pasoFoto">
-                    <p>Al igual que en proxmox, este mostrará una ip para poder conectarse remotamente.</p>
-                </article>
-                <article class="pasos paso13">
-                    <p id="paso"><span> 6-</span> Si queremos configurar la ip y la máscara seleccionaremos la opción 1 y seguiremos los siguientes pasos.</p>
-                    <img src="img/freenasInstall/paso13.png" alt="paso13" id="pasoFoto">
-                </article>
-                <article class="pasos paso14">
-                    <p id="paso"><span> 7-</span> Si queremos configurar la DNS  seleccionaremos la opción 6 e introduciremos la DNS.</p>
-                    <img src="img/freenasInstall/paso14.png" alt="paso14" id="pasoFoto">
-                </article>
+                <div class="containerTexto">
+                    <h3 id="numeroTutorialB">1</h3>
+                    <p id="paso">Seleccionamos Install/Upgrade.</p>
+                </div>
 
+            </div>
 
-                
-            </section>
-            
+            <script src="miJS/wikiJ.js"></script>
+
         </main>
-        <div class="subir">
-            <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
-        </div>
+        
+        
         <footer id="contacto">
+            
+            
             <div class="rrss">
                 <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
                 <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>

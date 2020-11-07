@@ -28,7 +28,7 @@
             })
         });
     </script>
-    <body class="tutorialB">
+    <body>
         <header id="encabezado">
             <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
             <div class="titulo"><h1>WIKI PROX</h1></div>
@@ -45,100 +45,34 @@
            </ul>
         </nav>
           
-        <main>
+        <main class="tutorialB">
 
-            <section>
-               
-                <h1>Configuración de FreeNAS.</h1>
-                <article class="pasos paso1">
+            <h1>Configuración de FreeNAS.</h1>
 
-                    <p id="paso"><span> 1-</span> Nos conectaremos al cliente de FreeNAS y creamos un pool.</p>
-                    <img src="img/freenas/paso1.png" alt="paso1" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso2">
-
-                    <p id="paso"><span> 2-</span> Pulsamos el botón ADD.</p>
-                    <img src="img/freenas/paso2.png" alt="paso2" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso3">
-
-                    <p id="paso"><span> 3-</span> Pulsamos el botón CREATE POOL.</p>
-                    <img src="img/freenas/paso3.png" alt="paso3" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso4">
-
-                    <p id="paso"><span> 4-</span> Le damos un nombre y seleccionamos los discos.</p>
-                    <img src="img/freenas/paso4.png" alt="paso4" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso5">
-
-                    <p id="paso"><span> 5-</span> Después de crear el pool añadiremos un dataset.</p>
-                    <img src="img/freenas/paso5.png" alt="paso5" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso6">
-
-                    <p id="paso"><span> 6-</span> Le damos un nombre y pulsamos el botón save.</p>
-                    <img src="img/freenas/paso6.png" alt="paso6" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso7">
-
-                    <p id="paso"><span> 7-</span> Activamos los siguientes servicios.</p>
-                    <img src="img/freenas/paso7.png" alt="paso7" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso8">
-
-                    <p id="paso"><span> 8-</span> Vamos al apartado Tasks -> Rsync task y pulsamos el botón ADD.</p>
-                    <img src="img/freenas/paso8.png" alt="paso8" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso9">
-
-                    <p id="paso"><span> 9-</span> Seleccionamos la ruta en la que se guardarán las copias. 
-                        Elegimos el usuario que ejecutará la acción Rsync.
-                        Seleccionamos el modo SSH, escribimos la dirección del servidor (preferiblemente usuario@ip) y su puerto..</p>
-                    <img src="img/freenas/paso9.png" alt="paso9" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso10">
-
-                    <p id="paso"><span> 10-</span> Seleccionamos la ruta remota que contiene el contenido que queremos copiar. Seleccionamos la direction PULL y la periodicidad que uno quiera.</p>
-                    <img src="img/freenas/paso10.png" alt="paso10" id="pasoFoto">
-
-                </article>
-
-                <article class="pasos paso11">
-
-                    <p id="paso"><span> 11-</span> Una vez configurado pulsamos el botón SAVE y haremos la primera ejecución.</p>
-                    <img src="img/freenas/paso11.png" alt="paso11" id="pasoFoto">
-
-                </article>
-
-
+            <div class="containerTutorialB" id="tutorialBFreenasConf">
                 
+                <div class="containerFoto">
+                    <img  src="img/freenas/paso1.png" alt="paso1" id="fotoB" >
+                    <div class="flechas">
+                        <img  src="img/anterior.png" alt="anterior" id="anterior" >
+                        <img  src="img/siguiente.png" alt="siguiente" id="siguiente" >
+                    </div>
+                </div>
+
+                <div class="containerTexto">
+                    <h3 id="numeroTutorialB">1</h3>
+                    <p id="paso">Nos conectaremos al cliente de FreeNAS y creamos un pool.</p>
+                </div>
+
+            </div>
+
+            <script src="miJS/wikiJ.js"></script>
 
             </section>
             
         </main>
-        <div class="subir">
-            <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
-        </div>
         <footer id="contacto">
+            
             <div class="rrss">
                 <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
                 <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
