@@ -81,6 +81,28 @@ footer div a{text-decoration: none; padding: 3px;}
 .contactos {display: flex; flex-direction: row; justify-content: center; align-items: center;}
 .contactos div iframe{height: 100%; width: 100%;}
 
+#contacto {
+       padding-top: 0.5%;
+}
+.subir{
+       background: #B5700E;
+       height: 50px;
+       position: static;
+       margin-left: 0%;
+       display: flex; 
+}
+.subir a {
+       text-decoration: none;
+       float: right; 
+}
+.subir a span{
+       font-size: 20px; 
+       color: white;
+}
+.subir a span:hover{
+       color: #32281B;
+}
+
 /* ----------------index.html---------------------- */
 
 
@@ -100,10 +122,7 @@ h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 .uno,.dos,.tres{display: flex; flex-direction: row; align-items: center; justify-items: center; padding: 10px;}
 .uno div img,.dos div img,.tres div img{display: block; margin: 0 auto; width: 100%;}
 
-.subir{background: #B5700E; height: 50px; position: static;}
-.subir a {text-decoration: none; float: right; margin-right: 20px;}
-.subir a span{font-size: 20px; color: white;}
-.subir a span:hover{color: #32281B;}
+
 
 .video_p{display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #32281B;}
 .video_p div h3{color: #C0BD8D; text-align: center; }
@@ -213,21 +232,59 @@ marquee span{color: #C0BD8D;}
 
 /* ----------------TUTORIALES B-------------------------------*/
 
-.tutorialB{
-       background-color: rgb(177, 169, 169);
+.containerTutorialB{
+       border: 5px solid black;
+       border-radius: 5px;
+       padding: 2%;
+	max-width: 80%;
+       display: flex;
+       margin: 1% auto;
+
 }
-.tutorialB main{
+.containerFoto {
        margin: 1%;
-       
+       width: 40vw;
+       object-fit: contain;
+       align-self: flex-start;
+       text-align: center;
+}
+.containerTexto{
+       flex: 1 1 auto;
+       padding: 1%;
 }
 
-.pasos{
-       margin-top: 2%;
+#paso{
+       margin-top: 10%;
+       margin-bottom: 1%;
+       font-size:1vw;
+} 
+#fotoB{
+       width: 40vw;
+       height: 20vw;
 }
+#anterior, #siguiente{
+       height: 4vw;
+       width: 4vw;
+      
+}
+.flechas{
+       display: inline-block;
+       margin: 0 auto;
+}
+
+.tutorialB{
+       background-color: rgb(177, 169, 169);
+       padding: 1%;
+}
+/* .tutorialB main{
+       margin: 1%;
+       
+} */
 
 .tutorialB span{
        font-size: 2.5vw;
 }
+
 .tutorialB h1{
        text-align: center;
 }
@@ -238,6 +295,9 @@ marquee span{color: #C0BD8D;}
        margin-top: 1%;
 }
 
+/* .pasos{
+       margin-top: 2%;
+}
 
 #pasoFoto{
 
@@ -254,12 +314,9 @@ marquee span{color: #C0BD8D;}
        margin-right: auto;
 }
 
-#paso{
-       margin-left: 20%;
-       margin-top: 1%;
-       margin-bottom: 1%;
-       font-size:1vw;
-}
+*/
+
+
 
 
 
@@ -284,6 +341,9 @@ nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; positio
 /*PIE DE PAGINA*/
 footer{flex-direction: column-reverse; justify-content: space-between;}
 .rrss{flex-direction: row;}
+.subir{
+       margin-left: 90%;
+}
 
 /* -------index.html-------- */
 /*MAIN*/
