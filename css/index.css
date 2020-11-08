@@ -330,7 +330,41 @@ marquee span{
 
 
        
-     }
+}
+
+
+@media (min-width: 1281px) and (max-width: 1436px) {
+
+
+/* ----TUTORIAL B------- */
+       
+.tutorialB{
+       padding-top: 6%;
+       padding-bottom: 12%;
+}
+.tutorialB h2{
+       margin-top: 2%;
+       margin-bottom: 2%;
+       font-size: 20px;
+}
+.containerTutorialB{
+       
+       height: 380px;
+
+}
+.containerFoto {
+       margin-top: 5%;
+}
+
+#paso{
+       
+       font-size:2vw;
+}
+
+       
+}
+
+
      
 /*------------------------------------------ 
 ##Device = Laptops, Desktops
@@ -351,12 +385,34 @@ marquee span{
        width: 30%;
        font-size: 15px;
 }
-
-
 .video_p div h3{
        font-size: 25px; 
 }
+
+/* ----TUTORIAL B------- */
        
+.tutorialB{
+       padding-top: 6%;
+       padding-bottom: 12%;
+}
+.tutorialB h2{
+       margin-top: 2%;
+       margin-bottom: 2%;
+       font-size: 20px;
+}
+.containerTutorialB{
+       
+       height: 350px;
+
+}
+.containerFoto {
+       margin-top: 5%;
+}
+
+#paso{
+       
+       font-size:2vw;
+}
        
      
 }
@@ -387,6 +443,10 @@ nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; positio
 
 /*FOOTER*/
 
+
+.info p{
+       font-size: 3vw;
+}
 .rrss{
        flex-direction: column;
       
@@ -414,6 +474,76 @@ marquee{
        flex-direction: column;
        justify-content: center;
 }
+
+/* ------------TUTORIALES B------------------ */
+
+.tutorialB h1{
+       margin-top: 30px;
+       font-size: 6vw;
+}
+
+.tutorialB h2{
+       margin-top: 30px;
+       font-size: 3vw;
+      
+}
+
+
+.containerTutorialB{
+       margin: 1% auto;
+       margin-top: 40px;
+       margin-bottom: 40px;
+       border: 5px solid black;
+       border-radius: 5px;
+       padding: 2%;
+	max-width: 90%;
+       display: block;
+       height: 80%;
+
+}
+
+.containerFoto {
+       display: block;
+       margin: 0 auto;
+       margin-top: 5%;
+       width: 100%;
+       object-fit: contain;
+       text-align: center;
+}
+
+.containerTexto{
+       padding: 3%;
+       flex: none;
+}
+
+#paso{
+       margin-top: 5%;
+       margin-bottom: 1%;
+       font-size:5vw;
+}
+
+#fotoB{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 75vw;
+       height: 50vw;
+}
+
+.flechas{
+       display: block;
+       margin: 0 auto;
+       margin-top: 3%;
+       
+}
+
+#anterior, #siguiente{
+       height: 10vw;
+       width: 10vw;
+      
+}
+
+
 
 }
      
@@ -490,6 +620,73 @@ marquee{
        justify-content: center;
 }
 
+/* ------------TUTORIALES B------------------ */
+
+.tutorialB h1{
+       margin-top: 30px;
+       
+}
+
+.tutorialB h2{
+       margin-top: 30px;
+       font-size: 20px;
+}
+
+
+.containerTutorialB{
+       margin: 1% auto;
+       margin-top: 40px;
+       margin-bottom: 40px;
+       border: 5px solid black;
+       border-radius: 5px;
+       padding: 2%;
+	max-width: 90%;
+       display: block;
+       height: 950px;
+
+}
+
+.containerFoto {
+       display: block;
+       margin: 0 auto;
+       margin-top: 5%;
+       width: 100%;
+       object-fit: contain;
+       text-align: center;
+}
+
+.containerTexto{
+       padding: 3%;
+       flex: none;
+}
+
+#paso{
+       margin-top: 5%;
+       margin-bottom: 1%;
+       font-size:5vw;
+}
+
+#fotoB{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 75vw;
+       height: 50vw;
+}
+
+.flechas{
+       display: block;
+       margin: 0 auto;
+       margin-top: 3%;
+       
+}
+
+#anterior, #siguiente{
+       height: 12vw;
+       width: 12vw;
+      
+}
+
    
 }
      
@@ -554,6 +751,73 @@ marquee{
 .video_p{
        flex-direction: column;
        justify-content: center;
+}
+
+
+/* ------------TUTORIALES B------------------ */
+
+.tutorialB h1{
+       margin-top: 30px;
+}
+
+.tutorialB h2{
+       margin-top: 30px;
+       font-size: 20px;
+}
+
+
+.containerTutorialB{
+       margin: 1% auto;
+       margin-top: 40px;
+       margin-bottom: 40px;
+       border: 5px solid black;
+       border-radius: 5px;
+       padding: 2%;
+	max-width: 90%;
+       display: block;
+       height: 550px;
+
+}
+
+.containerFoto {
+       display: block;
+       margin: 0 auto;
+       margin-top: 5%;
+       width: 100%;
+       object-fit: contain;
+       text-align: center;
+}
+
+.containerTexto{
+       padding: 3%;
+       flex: none;
+}
+
+#paso{
+       margin-top: 5%;
+       margin-bottom: 1%;
+       font-size:5vw;
+}
+
+#fotoB{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 75vw;
+       height: 50vw;
+}
+
+.flechas{
+       display: block;
+       margin: 0 auto;
+       margin-top: 3%;
+       
+}
+
+#anterior, #siguiente{
+       height: 12vw;
+       width: 12vw;
+      
 }
 
        
