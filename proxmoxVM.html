@@ -28,14 +28,14 @@
             })
         });
     </script>
-    <body class="tutorialB">
+    <body>
         <header id="encabezado">
-            <div class="logo"><img src="img/txurdi_logo.jpg" alt="Imagen no soportada"></div>
-            <div class="titulo"><h1>WIKI PROX</h1></div>
+            <span class="icon-menu"></span>
+            <div class="titulo">
+                <h1>WIKI PROX</h1>
+            </div>
         </header>
         <nav id="menu">
-            <P class="menuLetra">MENÚ</P>
-            <span class="icon-cross"></span><span class="icon-menu"></span>
            <ul>
             <li><a href="index.html"><span class="icon-home"></span></a></li>
             <li><a href="proxmox.html">Proxmox</a></li>
@@ -45,65 +45,45 @@
            </ul>
         </nav>
           
-        <main>
+        <main class="tutorialB">
 
-            <section>
+
+            <h1>Creación de una maquina virtual en Proxmox.</h1>
+
+
+            <div class="containerTutorialB" id="tutorialBProxmoxVM">
                 
-                <h1>Creación de una maquina virtual en Proxmox.</h1>
+                <div class="containerFoto">
+                    <img  src="img/proxmoxVM/paso1.png" alt="paso1" id="fotoB" >
+                    <div class="flechas">
+                        <img  src="img/anterior.png" alt="anterior" id="anterior" >
+                        <img  src="img/siguiente.png" alt="siguiente" id="siguiente" >
+                    </div>
+                </div>
 
-                <article class="pasos paso1">
-                    <p id="paso"><span> 1-</span> Para realizar las copias de ubuntu, instalaremos FreeNAS  dentro de proxmox. 
+                <div class="containerTexto">
+                    <h3 id="numeroTutorialB">1</h3>
+                    <p id="paso">Para realizar las copias de ubuntu, instalaremos FreeNAS  dentro de Proxmox. 
                         Si no tenemos ninguna iso en el servidor subiremos una desde el ordenador.</p>
-                    <img src="img/proxmoxVM/paso1.png" alt="paso1" id="pasoFoto">
-                </article>
-                <article class="pasos paso2">
-                    <p id="paso"><span> 2-</span> Seleccionamos una iso desde nuestro ordenador.</p>
-                    <img src="img/proxmoxVM/paso2.png" alt="paso2" id="pasoFoto">
-                </article>
-                <article class="pasos paso3">
-                    <p id="paso"><span> 3-</span> Seleccionaremos el botón situado en el lado superior derecho.</p>
-                    <img src="img/proxmoxVM/paso3.png" alt="paso3" id="pasoFoto">
-                </article>
-                <article class="pasos paso4">
-                    <p id="paso"><span> 4-</span> Nos aparecerá la siguiente ventana. Le damos un nombre e ID.</p>
-                    <img src="img/proxmoxVM/paso4.png" alt="paso4" id="pasoFoto">
-                </article>
-                <article class="pasos paso5">
-                    <p id="paso"><span> 5-</span> Seleccionamos la iso del sistema.</p>
-                    <img src="img/proxmoxVM/paso5.png" alt="paso5" id="pasoFoto">
-                </article>
-                <article class="pasos paso6">
-                    <p id="paso"><span> 6-</span> Le damos el espacio deseado al disco.</p>
-                    <img src="img/proxmoxVM/paso6.png" alt="paso6" id="pasoFoto">
-                </article>
-                <article class="pasos paso7">
-                    <p id="paso"><span> 7-</span> Le damos la cantidad de núcleos.</p>
-                    <img src="img/proxmoxVM/paso7.png" alt="paso7" id="pasoFoto">
-                </article>
-                <article class="pasos paso8">
-                    <p id="paso"><span> 8-</span> La cantidad de memoria ram.</p>
-                    <img src="img/proxmoxVM/paso8.png" alt="paso8" id="pasoFoto">
-                </article>
-                <p>Una vez configurados todos los apartados de la ventana podremos iniciar la maquina.</p>
-            
-            </section>
-            
+                </div>
+
+            </div>
+
+            <script src="miJS/wikiJ.js"></script>
+
         </main>
-        <div class="subir">
-            <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
-        </div>
+    
         <footer id="contacto">
+            <div class="info">
+                <p>Email: correo@gmail.com</p>
+                <p>Tel contacto: 94 444 444 444</p>
+                <p>Grupo 2 Castellano - FP Txurdinaga 2020</p>
+            </div>
             <div class="rrss">
                 <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
                 <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
                 <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
             </div>
-            <div class="info">
-                <p>Email: correo@gmail.com</p>
-                <p>Grupo 2 Castellano - FPTxurdinaga 2020</p>
-                <p>Tel contacto: 94 444 444 444</p>
-            </div>
-            
         </footer>
     </body>
 </html>
