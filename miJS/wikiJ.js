@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(".icon-menu").toggle(
         function(){
         $('nav ul').animate({"left":"-35px"},1000);
-        $(".icon-menu").css({"color":"black"});
+        $(".icon-menu").css({"color":"white"});
         $('nav ul').css({"height":"275px","width":"50%","z-index":"1000","background-color":"#8A662A"});
         },
         function(){
