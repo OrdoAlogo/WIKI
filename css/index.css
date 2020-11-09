@@ -10,9 +10,9 @@
 *{margin: 0;}
 
 /*ENCABEZADO*/
-header{display: flex; justify-content:space-between; flex-direction: row; background: #8A662A; justify-items: center;}
+header{display: flex;  flex-direction: row; background: #6c648B; justify-items: center;}
 .titulo{flex-basis: 90%; text-align: center; font-size: 30px; margin-top: 30px;}
-.titulo h1{font-family: 'Inconsolata', monospace; font-size: 7rem; color: #32281B; position: relative; display: block; padding: 5px; }
+.titulo h1{font-family: 'Inconsolata', monospace; font-size: 7rem; color: white; position: relative; display: block; padding: 5px; }
 /*Efecto subrayado del titulo del encabezado*/
 .titulo h1::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
        background: linear-gradient(to right,#B5700E, #32281B ,#B5700E);
@@ -23,15 +23,14 @@ header{display: flex; justify-content:space-between; flex-direction: row; backgr
        transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);}
 
 
-.logo{padding: 10px; margin-left: 20px; margin-top: 20px;}
-.logo:hover img{-webkit-transform: scale(1.1); box-shadow: 0px 0px 0px 0px;}
+.logo{padding: 0px; margin-left: 20px; margin-top: 20px;}
 .logo img{border-radius: 15px; height: 70px;}
 
 /* img:hover{-webkit-transform: scale(0.7); box-shadow: 0px 0px 15px 15px#B5700E;} */
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
-nav{margin: 0 auto; width: 100%; background: #8A662A; padding-bottom: 1%; }
-ul{background:#8A662A; display: flex; width: 80%; margin: 0 auto; text-align: center; }
+nav{ width: 100%; background: linear-gradient(to bottom, #6c648B, #B6a19B); padding-bottom: 3%; }
+ul{ display: flex; width: 80%; margin: 0 auto; text-align: center; }
 ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 10px;}
 ul li a{ text-decoration: none; color: white;  font-size:  1.8rem; font-family: 'Inconsolata', monospace; border-radius: 5px; }
 ul li a:hover{color: #B5700E; background: #32281B; }
@@ -66,7 +65,7 @@ ul li {
 .icon-home,.icon-info{font-size: 20px;}
 
 /*ESTILOS DEL PIE DE PAGINA*/
-footer{margin: 0 auto; width: 100%; height: 100%; background: #B5700E; display: flex; flex-direction: row; align-items: center; justify-items: center;
+footer{margin: 0 auto; width: 100%; height: 100%; background: #6c648B; display: flex; flex-direction: row; align-items: center; justify-items: center;
        justify-content:space-around;}
 footer p{color: white; text-align: center;}
 .rrss{display: flex; flex-direction: column; align-items: center;}
@@ -86,9 +85,9 @@ footer div a{text-decoration: none; padding: 3px;}
 
 /*ESTILOS DE LA PARTE PRINCIPAL*/
 .main{margin: 0 auto; width: 100%;}
-.portada{height: 500px; background-image: url(../img/wall.png); background-size: cover;background-attachment:scroll; margin: 0 auto;
+.portada{height: 150px; background: #B6a19B; background-size: cover;background-attachment:scroll; margin: 0 auto;
        display: flex; align-items: center; justify-items: center; justify-content: center;}
-.portada h1{ text-align: center; font-size: 4vw; color: red; font-family: 'Inconsolata', monospace; -webkit-text-stroke:0.25px rgb(58, 52, 52);}
+.portada h1{ text-align: center; font-size: 4vw; color:linear-gradient(to right, #193674, #FBA100); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; -webkit-text-stroke:0.25px rgb(58, 52, 52);}
 h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 /* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
 .subPortada{  background: grey; display:flex; flex-direction: row; justify-content: space-around; align-items: center; justify-items: center;
@@ -105,7 +104,7 @@ h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 .subir a span{font-size: 20px; color: white;}
 .subir a span:hover{color: #32281B;}
 
-.video_p{display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #32281B;}
+.video_p{display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #B6a19B;}
 .video_p div h3{color: #C0BD8D; text-align: center; }
 .video_p div{  padding: 5px;}
 .video_p div p{position: relative; display: block; padding: 5px; text-align: center; color: white;}
@@ -118,7 +117,7 @@ h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 .video_p[data-animation="bonus"] p:hover::before { transform-origin: left; transform: scaleX(1);
        transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);}
 
-marquee{ display:flex; justify-items: center; align-items: center; height: 50px; background: #32281B; font-size: 30px; color: white; }
+marquee{ display:flex; justify-items: center; align-items: center; height: 50px; background: #B6a19B; font-size: 30px; color: white; }
 marquee span{color: #C0BD8D;}
 
 #tuto{
@@ -139,7 +138,7 @@ marquee span{color: #C0BD8D;}
 }
 
 .tutorialesContenido{
-       background-color: rgb(177, 169, 169);
+       background-color: #B6a19B;
        flex: 1;
 
 }
@@ -161,6 +160,7 @@ marquee span{color: #C0BD8D;}
        text-align: center;
        border-style: solid ;
        border-color: black;
+       background-color: #FBA100;
        border-width: 5px;
        border-radius: 5px;
        font-size: 1.5vw;
