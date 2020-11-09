@@ -2,156 +2,66 @@
 <html lang="es">
     <head>
         <title>WIKI | PROXMOX</title>
-        <link class="logo" rel="icon" type="image/vnd.microsoft.icon" href="img/logoWiki.png">
+        <link class="logo" rel="icon" type="image/vnd.microsoft.icon" href="img/txurdi_logo.jpg">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/tutotialB.css">
+       <!--  <link rel="stylesheet" type="text/css" href="css/tutotialB.css">  -->
         <link rel="stylesheet" type="text/css" href="css/fuentes-iconos/style.css"> 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <script src="../js/jquery.color.js"></script>
-    <script src="../js/jquery-1.6.3.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menuLetra").toggle(function(){
-
-                $('nav ul').animate({"left":"0px"},1000);
-                $(".icon-menu").css({"display":"none"});
-                $(".icon-cross").css({"display":"block"});
-                 $('nav ul').css({"height":"100%"});
-            },
-            function(){
-                $('nav ul').animate({"left":"-1500px"},1000);
-                $(".icon-menu").css({"display":"block"});
-                $(".icon-cross").css({"display":"none"});
-            })
-        });
-    </script>
-    <body>
+    <script src="../WIKI/miJS/wikiJ.js"> </script>
+    <body class="contenidoBody">
         <header id="encabezado">
-            <div class="logo"><img src="img/logoWiki.png" alt="Imagen no soportada"></div>
-            <div class="titulo"><h1>WIKI PROX</h1></div>
+            <div class="titulo">
+                <a href="index.html"><h1>WIKI PROX</h1></a>
+            </div>
         </header>
-        <nav>
+        <nav id="menu">
             <P class="menuLetra">MENU</P>
             <span class="icon-cross"></span><span class="icon-menu"></span>
            <ul>
-            <li><a href="index.html"><span class="icon-home"></span></a></li>
             <li><a href="proxmox.html">Proxmox</a></li>
             <li><a href="linux.html">Linux</a></li>
             <li><a href="freenas.html">FreeNAS</a></li>
-            <li><a href="comandos.html">Comandos Generales</a></li>
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
-          
-        <main>
+        <h1 class="titEntradas">Instalación, configuración y backups de FreeNAS.</h1> 
+        <main class="tutorialesContenido">
+           
 
-            <section>
+            <!-- Flexbox -->
+            <div id="contenedor"> 
+
+                <div class="item item-1">
+                    <a href="freenasInstall.html">
+                        <img src="img/instalar.png"  alt="instalar" id="instalar">
+                        Instalación y configuración
+                    </a>
+                </div> 
+
+                <div class="item item-2">
+                    <a href="freenasConf.html">
+                        <img src="img/backup.png"   alt="backup" id="backup">
+                        Backups
+                    </a>
+                </div>
                 
-                <h1>Instalación y configuración de FreeNAS.</h1>
-                <article class="paso1">
+            </div>
 
-                    <p id="paso"><span> 1-</span> Nos conectaremos al cliente de FreeNAS y creamos un pool.</p>
-                    <img src="img/freenas/paso1.png" alt="paso1" id="pasos">
-
-                </article>
-
-                <article class="paso2">
-
-                    <p id="paso"><span> 2-</span> Pulsamos el botón ADD.</p>
-                    <img src="img/freenas/paso2.png" alt="paso2" id="pasos">
-
-                </article>
-
-                <article class="paso3">
-
-                    <p id="paso"><span> 3-</span> Pulsamos el botón CREATE POOL.</p>
-                    <img src="img/freenas/paso3.png" alt="paso3" id="pasos">
-
-                </article>
-
-                <article class="paso4">
-
-                    <p id="paso"><span> 4-</span> Le damos un nombre y seleccionamos los discos.</p>
-                    <img src="img/freenas/paso4.png" alt="paso4" id="pasos">
-
-                </article>
-
-                <article class="paso5">
-
-                    <p id="paso"><span> 5-</span> Después de crear el pool añadiremos un dataset.</p>
-                    <img src="img/freenas/paso5.png" alt="paso5" id="pasos">
-
-                </article>
-
-                <article class="paso6">
-
-                    <p id="paso"><span> 6-</span> Le damos un nombre y pulsamos el botón save.</p>
-                    <img src="img/freenas/paso6.png" alt="paso6" id="pasos">
-
-                </article>
-
-                <article class="paso7">
-
-                    <p id="paso"><span> 7-</span> Activamos los siguientes servicios.</p>
-                    <img src="img/freenas/paso7.png" alt="paso7" id="pasos">
-
-                </article>
-
-                <article class="paso8">
-
-                    <p id="paso"><span> 8-</span> Vamos al apartado Tasks -> Rsync task y pulsamos el botón ADD.</p>
-                    <img src="img/freenas/paso8.png" alt="paso8" id="pasos">
-
-                </article>
-
-                <article class="paso9">
-
-                    <p id="paso"><span> 9-</span> Seleccionamos la ruta en la que se guardarán las copias. 
-                        Elegimos el usuario que ejecutará la acción Rsync.
-                        Seleccionamos el modo SSH, escribimos la dirección del servidor (preferiblemente usuario@ip) y su puerto..</p>
-                    <img src="img/freenas/paso9.png" alt="paso9" id="pasos">
-
-                </article>
-
-                <article class="paso10">
-
-                    <p id="paso"><span> 10-</span> Seleccionamos la ruta remota que contiene el contenido que queremos copiar. Seleccionamos la direction PULL y la periodicidad que uno quiera.</p>
-                    <img src="img/freenas/paso10.png" alt="paso10" id="pasos">
-
-                </article>
-
-                <article class="paso11">
-
-                    <p id="paso"><span> 11-</span> Una vez configurado pulsamos el botón SAVE y haremos la primera ejecución.</p>
-                    <img src="img/freenas/paso11.png" alt="paso11" id="pasos">
-
-                </article>
-
-
-                
-
-            </section>
             
         </main>
-        <div class="subir">
-            <a href="#encabezado"><span class="icon-arrow-bold-up"></span></a>
-        </div>
+       
         <footer id="contacto">
+            <div class="info">
+                <p>Email: correo@gmail.com</p>
+                <p>Tel contacto: 94 444 444 444</p>
+                <p>Grupo 2 Castellano - FP Txurdinaga 2020</p>
+            </div>
             <div class="rrss">
                 <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
                 <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
                 <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
-            </div>
-            <div class="info">
-                <p>Grupo 2 Castellano - FPTxurdinaga 2020</p>
-            </div>
-            <div class="contactos">
-                <p>Tel contacto: 94 444 444 444</p>
-                <p>Dirección: c/doctor Ornilla</p>
-                <p>Email: correo@gmail.com</p>
             </div>
         </footer>
     </body>

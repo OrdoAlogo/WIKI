@@ -1,27 +1,27 @@
 
-body{
-  background-color: rgb(177, 169, 169);
+.tutorialB{
+  /* background:linear-gradient(to bottom, black,#616161) ; */
 }
-main{
+.tutorialB main{
   margin: 1%;
      
 }
 
-article{
+.pasos{
   margin-top: 2%;
 }
 
 /* p{
     font-size:2vw;
 } */
-span{
-    font-size: 2.5vw;
+.tutorialB span{
+  font-size: 2.5vw;
 }
-h1{
+.tutorialB h1{
   text-align: center;
 }
 
-#pasos{
+#pasoFoto{
  
   display: block;
   margin-left: auto;
@@ -55,7 +55,7 @@ h1{
   
     
    
-    #pasos{
+    #pasoFoto{
         height: 30%;
         width: 40%;
       
@@ -82,7 +82,7 @@ h1{
  
    
 
-    #pasos{
+    #pasoFoto{
         height: 25%;
         width: 35%;
      
@@ -106,7 +106,7 @@ h1{
   
   @media (min-width: 768px) and (max-width: 1024px) {
     
-    #pasos{
+    #pasoFoto{
         height: 40%;
         width: 40%;
        
@@ -143,7 +143,7 @@ h1{
   
   @media (min-width: 481px) and (max-width: 767px) {
     
-    #pasos{
+    #pasoFoto{
         height: 30%;
         width: 30%;
        
@@ -167,7 +167,7 @@ h1{
   
   @media (min-width: 320px) and (max-width: 480px) {
   
-    #pasos{
+    #pasoFoto{
         height: 70%;
         width: 70%;
        

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tutorialA.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="encabezado">
+        <span class="icon-menu"></span>
+        <div class="titulo">
+            <h1>WIKI PROX</h1>
+        </div>
+    </header>
+    <nav id="menu">
+       <ul>
+        <li><a href="index.html"><span class="icon-home"></span></a></li>
+        <li><a href="proxmox.html">Proxmox</a></li>
+        <li><a href="linux.html">Linux</a></li>
+        <li><a href="freenas.html">FreeNAS</a></li>
+        <li><a href="#contacto"><span class="icon-info"></span></a></li>
+       </ul>
+    </nav>
+    <main>
+        <p class="explicacion">Teniendo el ubuntu server instalado o cualquier otro sistema linux 
+            podemos instalar un servicio DNS para traducir nuestras direcciones  a el nombre 
+            deseado y no tener que acordarnos de la ip completa. <br>
+            Primero tendremos que instalar el bind 9 con la siguiente linea <br>
+            <p class="comando">sudo apt-get install bind9</p><br>
+            <p class="explicacion"> Una vez instalado tendremos que ir a la ruta /etc/bind/ para hacer unas 
+                configuraciones.<br>
+            <p class="comando">sudo cd /etc/bind</p><br>
+            <p class="explicacion"> Una vez en esta ruta tendremos que abrir con nano el siguiente archivo 
+                atraves del siguiente comando. <br>
+            <p class="comando">sudo nano named.conf.local</p><br>
+            <p class="explicacion">Una vez abierto este archivo tendremos que añadir dos bloque de configuraciones
+                uno sera para el nombre del servidor y el otro bloque sera el de la zona inversa. <br>
+                Primero configuraremos el bloque del nombre del servidor. <br>
+            <p class="comando">zone "nombredetudominio.com"{<br>type master;<br>file "db.nombredetudominio.com"<br>};</p><br>
+            <p class="explicacion"> Ahora configuraremos la zona inversa, para esto utilizaremos de ejemplo la ip 
+                192.168.53.85<br>
+            <p class="comando"> zone "53.168.192.in-addr.arpa"{<br>type master;<br>file "db.192.168.53";<br>};<br></p>
+            <p class="explicacion"> Una vez echas esas configuraciones el fichero nos tiene que quedar de la 
+                siguiente manera</p>
+            <p class="comando">zone "nombredetudominio.com"{<br>type master;<br>file "db.nombredetudominio.com"<br>};<br><br><br>
+                zone "53.168.192.in-addr.arpa"{<br>type master;<br>file "db.192.168.53";<br>};<br></p>
+            <p class=explicacion> Una vez configurado el archivo named.conf.local iremos a la ruta /var/cache/bind
+            <p class="comando"> sudo cd /var/cache/bind</p>
+            <p class="explicacion">Una vez que estemos en esta ruta tendremos que crear los archivos que hemos indicado en el named.conf.local. 
+                Empezaremos por el del nombre de servidor.
+            <p class="comando"> sudo nano db.nombredetudominio.com</p>
+            <p class="explicacion">Una vez abierto este archivo lo mas probable es que este vacio y nosotros tendremos que escribir 
+                las siguientes lineas para configurar esa zona. Para este proceso debemos saber el nombre del servirdor.
+                <br> Para conocer el nombre de este deberemos de ejecutar el comando <a class="comando">sudo nano /etc/hosts</a> Y se mostrara el nombre de la maquina (localhost no el otro).
+                <br> Una vez que sabemos el nombre del servidor comenzaremos a configurar la zona, para esta configuracion utilizaremos la ip de antes y como nombre del servidor server.
+                Al final de la configuracion el fichero tiene que terminar de la siguiente manera -->
+            <p class="comando">$ORIGIN server.nombredetudominio.com.  #El punto del final de cada direccion es importante<br> $$TTL 86400; <br>
+             @ IN SOA server.nombredetudominio.com. info.nombredetudominio.com. (<br>  2020070801 ; <br> 6H ;<br>1H;<br>2W; <br>3H; <br> ) <br> @        IN       NS      server <br>
+            @       IN      A       192.168.53.85 <br>server       IN      A        192.168.53.85 <br> www      IN      A       192.168.53.85</p>
+            <p class="explicacion"> Ahora tenemos que hacer algo parecido pero con la zona inversa, para eso tenemos que crear el otro archivo que hemos indicado en el named.conf.local 
+            <p class="comando">sudon nano db.192.168.53</p><br>
+            <p class="explicacion">Una vez entramos en este archivo, probablemente tambien estara vacio y tendremos que hacer la siguiente configuracion -->
+            <p class="comando"> $ORIGIN 53.168.192.in-addr.arpa. <br> $TTL 86400; <br> @ IN SOA server.nombredetudominio.com. info.nombredetudominio.com. ( <br> 
+                2020042501 ; <br> 6H;; <br> 1H; <br> 2W; <br> 3H; <br> @        IN      NS         server.nombredetudominio.com. <br> 85        IN      PTR     server.nombredetudominio.com. </p>
+            <p class="explicacion"> Una vez configurado este archivo reiniciaremos el servidor dns con el siguiente comando
+            <p class="comando">systemctl restart bind9</p>
+            <p class="explicacion"> Una vez configurado probaremos el dns con la siguiente linea
+            <p class="comando">nslookup nombredetudominio.com</p>
+            <p class="explicacion"> Este comando nos debera devolver algo parecido a esto
+            <p class="comando"> Server: 192.168.53.85 <br>Address: 192.168.53.85#53 <br><br><br>Name: nombredetudominio.com <br>Address: 192.168.53.85 <br>
+            <p class="explicacion"> El servidor esta configurado (Recuerda que para verlo en otro ordenador tienes que poner la dns del servidor en el equipo)
+        </p>
+    </main>
+    <footer id="contacto">
+        <div class="info">
+            <p>Email: correo@gmail.com</p>
+            <p>Tel contacto: 94 444 444 444</p>
+            <p>Grupo 2 Castellano - FP Txurdinaga 2020</p>
+        </div>
+        <div class="rrss">
+            <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
+            <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
+            <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
+        </div>
+    </footer>
+</body>
+</html>

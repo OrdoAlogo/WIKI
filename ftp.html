@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>WIKI | PROXMOX</title>
+        <link class="logo" rel="icon" type="image/vnd.microsoft.icon" href="img/txurdi_logo.jpg">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/tutotialB.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/fuentes-iconos/style.css"> 
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../WIKI/miJS/wikiJ.js"> </script>
+    <body class="tutorialA">
+        <header id="encabezado">
+            <div class="titulo">
+                <a href="index.html"><h1>WIKI PROX</h1></a>
+            </div>
+        </header>
+        <nav id="menu">
+            <P class="menuLetra">MENU</P>
+            <span class="icon-cross"></span><span class="icon-menu"></span>
+           <ul>
+            <li><a href="proxmox.html">Proxmox</a></li>
+            <li><a href="linux.html">Linux</a></li>
+            <li><a href="freenas.html">FreeNAS</a></li>
+            <li><a href="#contacto"><span class="icon-info"></span></a></li>
+           </ul>
+        </nav>
+        <h1 class="titEntradas">Instalación y configuración de FTP.</h1> 
+        <main class="mainSSH">
+            
+                
+         <p class="explicacion"> 
+            Teniendo el ubuntu server instalado o cualquier otro sistema linux podemos instalar un servicio FTP para acceder y almacenar información desde otro ordenador <br>
+            Lo primero que tendremos que hacer será instalar el servicio:
+         <p class="comando">sudo apt-get install vsftpd</p>
+         <p class="explicacion">Después de instalarlo tendremos que irnos al fichero de configuración y cambiar las siguientes líneas:
+            Para acceder al fichero de configuración:
+         <p class="comando">sudo nano /etc/vsftpd.conf</p>
+         <p class="explicacion">Tendremos que descomentar las siguientes líneas. 
+         <p class="comando">write_enable=YES <br>local_umask=022<br>chroot_local_user=YES</p>
+         <p class=explicacion> Una vez descomentadas esas lineas tendremos que escribir las siguientes lineas
+         <p class="comando">allow_writeable_chroot=YES <br>pasv_enable=Yes <br>pasv_min_port=40000 <br>pasv_max_port=40100</p>
+         <p class="explicacion">Una vez realizados estos pasos tendremos que reiniciar el servicio
+         <p class="comando">sudo service vsftpd restart</p>
+         <p class="expliacion">Para finalizar comprobaremos que ese servicio está activo y funcionando
+         <p class="comando">systemctl status vsftpd</p>
+         <p class="explicacion"> Felicidades tu FTP esta configurado</p>
+         </p>
+            
+        </main>
+        <footer id="contacto">
+            <div class="info">
+                <p>Email: correo@gmail.com</p>
+                <p>Tel contacto: 94 444 444 444</p>
+                <p>Grupo 2 Castellano - FP Txurdinaga 2020</p>
+            </div>
+            <div class="rrss">
+                <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
+                <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
+            </div>
+        </footer>
+    </body>
+</html>
