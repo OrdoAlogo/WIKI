@@ -5,7 +5,7 @@ $(document).ready(function(){
         function(){
         $('nav ul').animate({"left":"-35px"},1000);
         $(".icon-menu").css({"color":"black"});
-        $('nav ul').css({"height":"30%","width":"50%","z-index":"1000","background-color":"#8A662A"});
+        $('nav ul').css({"height":"275px","width":"50%","z-index":"1000","background-color":"#8A662A"});
         },
         function(){
             $('nav ul').animate({"left":"-1500px"},1000);
