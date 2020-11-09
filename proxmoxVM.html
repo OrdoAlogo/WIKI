@@ -12,22 +12,7 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/jquery.color.js"></script>
     <script src="../js/jquery-1.6.3.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menuLetra").toggle(function(){
 
-                $('nav ul').animate({"left":"0px"},1000);
-                $(".icon-menu").css({"display":"none"});
-                $(".icon-cross").css({"display":"block"});
-                 $('nav ul').css({"height":"100%"});
-            },
-            function(){
-                $('nav ul').animate({"left":"-1500px"},1000);
-                $(".icon-menu").css({"display":"block"});
-                $(".icon-cross").css({"display":"none"});
-            })
-        });
-    </script>
     <body>
         <header id="encabezado">
             <span class="icon-menu"></span>
@@ -44,12 +29,9 @@
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
-          
+
+        <h1 class="titEntradas">Creación de una maquina virtual en Proxmox.</h1> 
         <main class="tutorialB">
-
-
-            <h1>Creación de una maquina virtual en Proxmox.</h1>
-
 
             <div class="containerTutorialB" id="tutorialBProxmoxVM">
                 

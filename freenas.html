@@ -12,22 +12,7 @@
     <script src="../js/jquery.easing.1.3.js"></script>
     <script src="../js/jquery.color.js"></script>
     <script src="../js/jquery-1.6.3.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menuLetra").toggle(function(){
-
-                $('nav ul').animate({"left":"0px"},1000);
-                $(".icon-menu").css({"display":"none"});
-                $(".icon-cross").css({"display":"block"});
-                 $('nav ul').css({"height":"100%"});
-            },
-            function(){
-                $('nav ul').animate({"left":"-1500px"},1000);
-                $(".icon-menu").css({"display":"block"});
-                $(".icon-cross").css({"display":"none"});
-            })
-        });
-    </script>
+  
     <body class="contenidoBody">
         <header id="encabezado">
             <span class="icon-menu"></span>
@@ -37,31 +22,32 @@
         </header>
         <nav id="menu">
            <ul>
-            <li><a href="index.html"><span class="icon-home"></span></a></li>
             <li><a href="proxmox.html">Proxmox</a></li>
             <li><a href="linux.html">Linux</a></li>
             <li><a href="freenas.html">FreeNAS</a></li>
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
-          
-        <main class="tutorialesContenido">
-            <h1>Instalación, configuración y backups de FreeNAS.</h1>
 
+        <h1 class="titEntradas">Instalación, configuración y backups de FreeNAS.</h1> 
+        <main class="tutorialesContenido">
+           
             <!-- Flexbox -->
             <div id="contenedor"> 
 
                 <div class="item item-1">
                     <a href="freenasInstall.html">
-                        Instalación y configuración
                         <img src="img/instalar.png"  alt="instalar" id="instalar">
+                        Instalación y configuración
+
                     </a>
                 </div> 
 
                 <div class="item item-2">
                     <a href="freenasConf.html">
-                        Backups
                         <img src="img/backup.png"   alt="backup" id="backup">
+                        Backups
+
                     </a>
                 </div>
                 

@@ -1,6 +1,7 @@
 
 .tutorialB{
-  background-color: rgb(177, 169, 169);
+  /* background:linear-gradient(to bottom, black,#616161) ; */
+
 }
 .tutorialB main{
   margin: 1%;
