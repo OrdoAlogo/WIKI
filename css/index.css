@@ -22,7 +22,7 @@ img:hover{opacity: 0.5;}
        src: url(LaOriental-Bold.otf);
 }
 
-*{margin: 0;}
+*{margin: 0; /* border: 1px solid red; */}
 
 h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 /* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
@@ -70,7 +70,7 @@ header{
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
 
-nav{margin: 0 auto; width: 100%; background:black; padding: 10px; }
+nav{margin: 0 auto; background:black; padding: 10px; }
 ul{height: 100%; background: white; border: 2px solid #a1c04a; display: flex; width: 80%; margin: 0 auto; text-align: center; border-radius: 10px; }
 ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
 ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; }
@@ -507,7 +507,7 @@ marquee a:hover{background: #a1c04a;}
               margin: auto;
        }
        .titulo h1{
-              font-size: 15vw;
+              font-size: 12vw;
        }
        
        /*MENU*/
@@ -517,14 +517,13 @@ marquee a:hover{background: #a1c04a;}
        ul li a{
               color: #a1c04a;
        }
-      
+
        .menuLetra{display: block; font-size: 30px;}
        .icon-menu{
               margin-top: 3%;
               margin-left: 2%;
               display: block; 
               font-size: 15vw;
-              color: #a1c04a;
        }
        
        /*FOOTER*/
@@ -667,10 +666,20 @@ marquee a:hover{background: #a1c04a;}
        margin: auto;
 }
 .titulo h1{
+       font-size: 12vw;
+}
+
+
+
+/*MENU*/
+ul li {border-bottom:1px solid white; display: block; text-align: left;}
+nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
+.icon-menu{
+       margin-top: 3%;
+       margin-left: 2%;
+       display: block; 
        font-size: 15vw;
 }
-/*MENU*/
-
 /*FOOTER*/
 footer{
        flex-direction: column-reverse; 
@@ -837,9 +846,10 @@ footer{
 /*MAIN*/
 .portada{
        height:150px;
+       
 }
 .portada h1{
-       font-size: 7vw;
+       font-size: 6vw;
 } 
 marquee{
        font-size: 20px;
