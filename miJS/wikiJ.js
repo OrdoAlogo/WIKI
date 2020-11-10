@@ -7,6 +7,7 @@ $(document).ready(function(){
         $('.icon-menu').css({"display":"none"});
         $('.icon-cross').css({"display":"block"});
         $('nav ul').css({"height":"535px"});
+
         },
         function(){
             $('nav ul').animate({"left":"-1500px"},1000);
