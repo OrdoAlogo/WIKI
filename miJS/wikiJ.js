@@ -6,6 +6,7 @@ $(document).ready(function(){
         $('nav ul').animate({"left":"0px"},1000);
         $(".icon-menu").css({"color":"black"});
         $('nav ul').css({"height":"535px"});
+
         },
         function(){
             $('nav ul').animate({"left":"-1500px"},1000);
