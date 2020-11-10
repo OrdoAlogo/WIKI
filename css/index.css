@@ -1,5 +1,6 @@
 
 body{  background:linear-gradient(to bottom, black,#616161) ;}
+img:hover{opacity: 0.5;}
 /* ----------------GENERAL---------------------- */
 @font-face{
        font-family:'osaka';
@@ -82,7 +83,7 @@ ul ul a{
 }
 
 /* Icono 3 barras menu desplegable movil */
-.icon-menu{display: none; color: white;}
+.icon-menu,.icon-cross{display: none;}
 .icon-home,.icon-info{font-size: 20px;}
 
 
@@ -170,28 +171,11 @@ footer div a{text-decoration: none; padding: 3px;}
 }
 .nTutoriales h5{font-size: 2vw; text-align: center; color: white;}
 
-
-
-/*
-.video_p div p{position: relative; display: block; padding: 5px; text-align: center; color: white;}*/
-
-/*Efectos de lineas */
-/* .video_p div p::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
-       background: linear-gradient(to right, #C0BD8D, #B5700E, #C0BD8D);
-       z-index: 1; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-in-out;} 
-.video_p p:hover::before{ transform: scaleX(1);}
-.video_p[data-animation="bonus"] p::before { transform-origin: right;} 
-.video_p[data-animation="bonus"] p:hover::before { transform-origin: left; transform: scaleX(1);
-       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);} */
-
-
 marquee{ 
        display:flex;
        justify-items: center;
        align-items: center; 
        height: 50px; 
-
-       /* background: #a1c04a; */
        font-size: 30px; 
        color: black; 
 }
@@ -204,15 +188,7 @@ marquee a:hover{background: #a1c04a;}
        outline : none;
        text-decoration: none;
        color: black;
-
-  /* 
-       background: #32281B;
-       font-size: 30px; 
-       color: white; */
 }
-
-
-
 
 /* ----------------freenas.html, proxmox.html, linux.html -------------------------------*/
 
@@ -226,7 +202,11 @@ marquee a:hover{background: #a1c04a;}
 }
 
 .tutorialesContenido{
-       /* background-color: #B6a19B; */
+
+
+
+    
+
        flex: 1;
        display: flex;
        flex-direction: row;
@@ -234,7 +214,7 @@ marquee a:hover{background: #a1c04a;}
        align-items: center;
 
 }
-.titEntradas{margin: 0 auto; text-align: center; margin-top: 10px; color: white; font-size: 3vw;}
+.titEntradas{margin: 0 auto; text-align: center; margin-top: 10px; color: white; font-size: 4vw;}
 
 
 .tutorialesContenido h1{
@@ -348,7 +328,7 @@ marquee a:hover{background: #a1c04a;}
        font-size:1vw;
        color: white;
        text-align: center;
-       font-size: 3vw;
+       font-size: 2vw;
 
 } 
 #fotoB{
@@ -370,9 +350,7 @@ marquee a:hover{background: #a1c04a;}
 }
 
 .tutorialB{
-       /* background:linear-gradient(to bottom, black,#616161) ; */
-
-       /*background-color: rgb(177, 169, 169);*/
+       
 
        padding: 1%;
 }
@@ -386,6 +364,7 @@ marquee a:hover{background: #a1c04a;}
        text-align: center;
        font-size: 1vw;
        margin-top: 1%;
+       color: white;
 }
 
 
@@ -399,13 +378,6 @@ marquee a:hover{background: #a1c04a;}
 -------------------------------------------------*/
 
 
-@media (min-width: 1281px) {
-
-
-
-
-       
-}
 
 
 @media (min-width: 1281px) and (max-width: 1436px) {
@@ -526,7 +498,7 @@ marquee a:hover{background: #a1c04a;}
 ---------------------------------------*/
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and  (max-width: 700px) {
     
 /* ---------GENERAL------- ----*/
 .titulo{
@@ -540,14 +512,11 @@ marquee a:hover{background: #a1c04a;}
 ul li {border-bottom:1px solid #aedf27; display: block; text-align: left;}
 nav ul{left: -1500px; display: block; background: black; height: 0px; position:absolute; border-radius: 0px 10px 0px 0px;}
 nav ul li a{color: white;}
-.icon-menu{display: block;}
-.menuLetra{display: block; font-size: 30px;}
-.icon-menu{
-       margin-top: 3%;
-       margin-left: 2%;
-       display: block; 
-       font-size: 15vw;
-}
+.icon-cross{font-size: 5vw; color: white; position: relative; }
+.icon-menu{display: block; font-size: 5vw; color: white; position: relative; }
+.menuLetra{display: block; font-size: 30px; color: white; cursor: pointer;}
+.menuLetra:hover{color: #a1c04a;}
+
 
 /*FOOTER*/
 
@@ -567,9 +536,7 @@ nav ul li a{color: white;}
 .portada h1{
        font-size: 7vw;
 } 
-marquee{
-       font-size: 20px;
-}
+
 .video_p div iframe{
        width: 700px;
        height: 350px;
@@ -692,14 +659,6 @@ marquee{
        font-size: 15vw;
 }
 /*MENU*/
-ul li {border-bottom:1px solid white; display: block; text-align: left;}
-nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
-.icon-menu{
-       margin-top: 3%;
-       margin-left: 2%;
-       display: block; 
-       font-size: 15vw;
-}
 
 /*FOOTER*/
 footer{
@@ -725,9 +684,7 @@ footer{
 .portada h1{
        font-size: 7vw;
 } 
-marquee{
-       font-size: 20px;
-}
+
 .video_p div iframe{
        width: 100%;
        height: 80%;
@@ -899,6 +856,7 @@ marquee{
 .tutorialB h2{
        margin-top: 30px;
        font-size: 20px;
+      
 }
 
 

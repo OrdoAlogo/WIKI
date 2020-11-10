@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header id="encabezado">
-        <span class="icon-menu"></span>
-        <div class="titulo">
-            <h1>WIKI PROX</h1>
-        </div>
-    </header>
-    <nav id="menu">
-       <ul>
-        <li><a href="index.html"><span class="icon-home"></span></a></li>
-        <li><a href="proxmox.html">Proxmox</a></li>
-        <li><a href="linux.html">Linux</a></li>
-        <li><a href="freenas.html">FreeNAS</a></li>
-        <li><a href="#contacto"><span class="icon-info"></span></a></li>
-       </ul>
-    </nav>
+    <head>
+        <title>WIKI | INICIO</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/fuentes-iconos/style.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@100,400;59.9,294;97.4,200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <!--SCRIPT PARA EL MENÚ-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script src="../WIKI/miJS/wikiJ.js"> </script>
+    <body>
+        <header id="encabezado">
+            <div class="titulo">
+                <a href="index.html"><h1>WIKI-PROX</h1></a>
+            </div>
+        </header>
+        <nav id="menu">
+            <P class="menuLetra">MENU</P>
+            <span class="icon-cross"></span><span class="icon-menu"></span>
+           <ul>
+            <li><a href="proxmox.html">Proxmox</a></li>
+            <li><a href="linux.html">Linux</a></li>
+            <li><a href="freenas.html">FreeNAS</a></li>
+            <li><a href="#contacto"><span class="icon-info"></span></a></li>
+           </ul>
+        </nav>
     <main>
         <p class="explicacion">
             Teniendo el ubuntu server instalado o cualquier otro sistema linux podemos instalar un servicio Apache para acceder a la pagina web <br>
