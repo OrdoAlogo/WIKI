@@ -1,4 +1,6 @@
+
 body{  background:linear-gradient(to bottom, black,#616161) ;}
+img:hover{opacity: 0.5;}
 /* ----------------GENERAL---------------------- */
 @font-face{
        font-family:'osaka';
@@ -8,6 +10,15 @@ body{  background:linear-gradient(to bottom, black,#616161) ;}
        font-family:'oriental';
        src: url(LaOriental-Bold.otf);
 }
+
+
+/* ----------------GENERAL---------------------- */
+
+*{margin: 0;}
+
+h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
+/* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
+
 
 *{margin: 0;}
 
@@ -20,6 +31,7 @@ header{
        justify-content:space-between;
        flex-direction: row;
        background: #000000;
+
        justify-items: center;
 }
 .titulo{
@@ -27,6 +39,7 @@ header{
        text-align: center;
        margin-top: 30px;
 }
+
 .titulo a {text-decoration:none; }
 .titulo h1{
        font-family: 'oriental'; 
@@ -38,7 +51,9 @@ header{
 }
 /*Efecto subrayado del titulo del encabezado*/
 .titulo h1::before{content: ''; position: absolute; bottom: 0; left: 0; width: 100%;  height: 2px;
+
        background: linear-gradient(to right,#cec6bb, #aaa7a3 ,#868076);z-index: 1; transform: scaleX(0);
+
        transform-origin: left; transition: transform 0.5s ease-in-out;
 }
 .titulo h1:hover::before{ transform: scaleX(1);}
@@ -48,23 +63,38 @@ header{
 }
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
+
 nav{margin: 0 auto; width: 100%; background:black; padding: 10px; }
 ul{height: 100%; background: white; border: 2px solid #a1c04a; display: flex; width: 80%; margin: 0 auto; text-align: center; border-radius: 10px; }
 ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
 ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; }
 
 ul li a:hover{color: black; background: #aedf27;}
-.menuLetra{display: none;cursor: pointer; color: white;}
-.icon-menu{display: none; } 
-.icon-cross{display: none;} 
-.icon-menu,.icon-cross,.menuLetra{margin-left: 10px; font-size: 20px;}
-.menuLetra:hover{color: #aedf27; }
+ul ul {
+       display:none;
+       position:absolute;
+/*top:100%;
+left:0; 
+padding:0;
+width:auto;
+z-index: +1; */
+}
+ul ul a{
+       font-size:  1.2rem;
+}
+
+/* Icono 3 barras menu desplegable movil */
+.icon-menu{display: none;}
+.icon-home,.icon-info{font-size: 20px;}
+
 
 /*ESTILOS DEL PIE DE PAGINA*/
 footer{margin: 0 auto; 
        width: 100%; 
        height: 100%; 
+
        background: #a1c04a; 
+
        display: flex; 
        flex-direction: row; 
        align-items: center; 
@@ -147,7 +177,6 @@ marquee{
        justify-items: center;
        align-items: center; 
        height: 50px; 
-       /* background: #a1c04a; */
        font-size: 30px; 
        color: black; 
 }
@@ -162,7 +191,6 @@ marquee a:hover{background: #a1c04a;}
        color: black;
 }
 
-
 /* ----------------freenas.html, proxmox.html, linux.html -------------------------------*/
 
 /* Flexbox */
@@ -174,7 +202,7 @@ marquee a:hover{background: #a1c04a;}
 }
 
 .tutorialesContenido{
-       /* background-color: #B6a19B; */
+
        flex: 1;
        display: flex;
        flex-direction: row;
@@ -182,7 +210,8 @@ marquee a:hover{background: #a1c04a;}
        align-items: center;
 
 }
-.titEntradas{margin: 0 auto; text-align: center; margin-top: 10px; color: white; font-size: 3vw;}
+.titEntradas{margin: 0 auto; text-align: center; margin-top: 10px; color: white; font-size: 4vw;}
+
 
 .tutorialesContenido h1{
        text-align: center;
@@ -202,6 +231,7 @@ marquee a:hover{background: #a1c04a;}
        border-style: solid ;
        border-color: black;
        background-color: #a1c04a;
+
        border-width: 5px;
        border-radius: 5px;
        font-size: 1.5vw;
@@ -234,12 +264,13 @@ marquee a:hover{background: #a1c04a;}
 .tutorialA {
        background-color: grey;
 }
+
 .explicacion{ color: rgb(156, 153, 153);}
+
 .comando,.explicacion {
        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
        font-size: 2vW;
        width: 100%;
-      
 }
 .comando{ 
        border: 0.1em solid black ;
@@ -251,6 +282,7 @@ marquee a:hover{background: #a1c04a;}
        width: 25%;
        height: 19%;;
 }
+
 .mainSSH{width: 70%; margin: 0 auto; border:2px solid #a1c04a;}
 .imagenesSSH{ margin-top:10px; display: flex; flex-direction: row; justify-content: space-around; justify-items: center;}
 
@@ -258,6 +290,7 @@ marquee a:hover{background: #a1c04a;}
 
 .containerTutorialB{
        border: 5px solid #a1c04a;
+
        border-radius: 5px;
        padding: 2%;
 	max-width: 80%;
@@ -283,7 +316,8 @@ marquee a:hover{background: #a1c04a;}
        font-size:1vw;
        color: white;
        text-align: center;
-       font-size: 3vw;
+       font-size: 2vw;
+
 } 
 #fotoB{
        width: 40vw;
@@ -294,7 +328,9 @@ marquee a:hover{background: #a1c04a;}
        width: 4vw;
       
 }
+
 #anterior:hover,#siguiente:hover{background: #a1c04a; border-radius: 10px;}
+
 .flechas{
        display: inline-block;
        margin: 0 auto;
@@ -302,7 +338,8 @@ marquee a:hover{background: #a1c04a;}
 }
 
 .tutorialB{
-       /* background:linear-gradient(to bottom, black,#616161) ; */
+       
+
        padding: 1%;
 }
 .tutorialB span{
@@ -315,6 +352,7 @@ marquee a:hover{background: #a1c04a;}
        text-align: center;
        font-size: 1vw;
        margin-top: 1%;
+       color: white;
 }
 
 
@@ -327,8 +365,14 @@ marquee a:hover{background: #a1c04a;}
   ##Screen = 1281px to higher resolution desktops
 -------------------------------------------------*/
 
+
+
+
 @media (min-width: 1281px) and (max-width: 1436px) {
-/* ----TUTORIAL B------- */      
+
+
+/* ----TUTORIAL B------- */
+       
 .tutorialB{
        padding-top: 6%;
        padding-bottom: 12%;
@@ -351,18 +395,32 @@ marquee a:hover{background: #a1c04a;}
        
        font-size:2vw;
 }
+
       
 }
     
+
 /*------------------------------------------ 
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
 ------------------------------------------*/
+
 @media (min-width: 1025px) and (max-width: 1280px) {
     
 .portada{
        height:400px;
 }
+
+.video_p div iframe{
+       width: 600px;
+       height: 350px;
+       margin-right: 5%;
+}
+.nTutoriales{
+       width: 30%;
+       font-size: 15px;
+}
+
 .video_p div h3{
        font-size: 25px; 
 }
@@ -390,14 +448,18 @@ marquee a:hover{background: #a1c04a;}
 #paso{
        
        font-size:2vw;
+
 }     
+
 }
      
 /*--------------------------------------
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 ---------------------------------------*/
-@media screen and (max-width: 700px) {
+
+
+@media screen and  (max-width: 700px) {
     
 /* ---------GENERAL------- ----*/
 .titulo{
@@ -406,13 +468,19 @@ marquee a:hover{background: #a1c04a;}
 .titulo h1{
        font-size: 15vw;
 }
+
 /*MENU*/
 ul li {border-bottom:1px solid #aedf27; display: block; text-align: left;}
 nav ul{left: -1500px; display: block; background: black; height: 0px; position:absolute; border-radius: 0px 10px 0px 0px;}
 nav ul li a{color: white;}
 .icon-menu{display: block;}
-.menuLetra{display: block; font-size: 30px;}
+.menuLetra{display: block; font-size: 30px; color: white; cursor: pointer;}
+.menuLetra:hover{color: #a1c04a;}
+
+
 /*FOOTER*/
+
+
 .info p{
        font-size: 3vw;
 }
@@ -428,10 +496,11 @@ nav ul li a{color: white;}
 .portada h1{
        font-size: 7vw;
 } 
-marquee{
-       font-size: 20px;
-}
 
+.video_p div iframe{
+       width: 700px;
+       height: 350px;
+}
 .nTutoriales{
        width: 80%;
        font-size: 20px;
@@ -453,6 +522,8 @@ marquee{
        font-size: 3vw;
       
 }
+
+
 .containerTutorialB{
        margin: 1% auto;
        margin-top: 40px;
@@ -465,6 +536,7 @@ marquee{
        height: 80%;
 
 }
+
 .containerFoto {
        display: block;
        margin: 0 auto;
@@ -473,6 +545,7 @@ marquee{
        object-fit: contain;
        text-align: center;
 }
+
 .containerTexto{
        padding: 3%;
        flex: none;
@@ -505,11 +578,18 @@ marquee{
       
 }
 
+
+
+}
      
 /* ------------------------------------
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
 --------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
 
 /*---------------------------------------------------- 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -526,6 +606,7 @@ marquee{
 .titulo h1{
        font-size: 15vw;
 }
+/*MENU*/
 
 /*FOOTER*/
 footer{
@@ -551,15 +632,17 @@ footer{
 .portada h1{
        font-size: 7vw;
 } 
-marquee{
-       font-size: 20px;
-}
+
 .video_p div iframe{
        width: 100%;
        height: 80%;
 }
 .nTutoriales{
        width: 80%;
+}
+.video_p{
+       flex-direction: column;
+       justify-content: center;
 }
 
 /* ------------TUTORIALES B------------------ */
@@ -628,13 +711,15 @@ marquee{
        width: 12vw;
       
 }
- 
+
+   
 }
      
 /* ---------------------------------------------------
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 ----------------------------------------------------*/
+
 @media (min-width: 320px) and (max-width: 480px) {
      
 /* ---------GENERAL------- ----*/
@@ -644,8 +729,21 @@ marquee{
 .titulo h1{
        font-size: 15vw;
 }
+/*MENU*/
+ul li {border-bottom:1px solid white; display: block; text-align: left;}
+nav ul{left: -1500px; display: block; background:  #32281B; height: 0px; position:absolute;}
+.icon-menu{
+       margin-top: 3%;
+       margin-left: 2%;
+       display: block; 
+       font-size: 15vw;
+}
 
 /*FOOTER*/
+footer{
+       flex-direction: column-reverse; 
+       justify-content: space-between;
+}
 
 .rrss{
        flex-direction: row;
@@ -688,10 +786,13 @@ marquee{
        margin-top: 30px;
 }
 
+
 .tutorialB h2{
        margin-top: 30px;
        font-size: 20px;
+      
 }
+
 
 
 .containerTutorialB{
@@ -716,10 +817,12 @@ marquee{
        text-align: center;
 }
 
+
 .containerTexto{
        padding: 3%;
        flex: none;
 }
+
 
 #paso{
        margin-top: 5%;

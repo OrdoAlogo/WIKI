@@ -10,10 +10,11 @@
     </head>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../WIKI/miJS/wikiJ.js"> </script>
+    
     <body class="tutorialA">
         <header id="encabezado">
             <div class="titulo">
-                <a href="index.html"><h1>WIKI PROX</h1></a>
+                <a href="index.html"><h1>WIKI-PROX</h1></a>
             </div>
         </header>
         <nav id="menu">
@@ -26,14 +27,15 @@
             <li><a href="#contacto"><span class="icon-info"></span></a></li>
            </ul>
         </nav>
+
         <h1 class="titEntradas">Instalación y configuración de FTP.</h1> 
         <main class="mainSSH">
-            
-                
+               
          <p class="explicacion"> 
             Teniendo el ubuntu server instalado o cualquier otro sistema linux podemos instalar un servicio FTP para acceder y almacenar información desde otro ordenador <br>
             Lo primero que tendremos que hacer será instalar el servicio:
          <p class="comando">sudo apt-get install vsftpd</p>
+
          <p class="explicacion">Después de instalarlo tendremos que irnos al fichero de configuración y cambiar las siguientes líneas:
             Para acceder al fichero de configuración:
          <p class="comando">sudo nano /etc/vsftpd.conf</p>
