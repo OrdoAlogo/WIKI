@@ -13,6 +13,14 @@ img:hover{opacity: 0.5;}
 
 
 /* ----------------GENERAL---------------------- */
+@font-face{
+       font-family:'osaka';
+       src: url(osaka-re.ttf);
+}
+@font-face{
+       font-family:'oriental';
+       src: url(LaOriental-Bold.otf);
+}
 
 *{margin: 0;}
 
@@ -31,7 +39,6 @@ header{
        justify-content:space-between;
        flex-direction: row;
        background: #000000;
-
        justify-items: center;
 }
 .titulo{
@@ -202,11 +209,6 @@ marquee a:hover{background: #a1c04a;}
 }
 
 .tutorialesContenido{
-
-
-
-    
-
        flex: 1;
        display: flex;
        flex-direction: row;
@@ -214,7 +216,7 @@ marquee a:hover{background: #a1c04a;}
        align-items: center;
 
 }
-.titEntradas{margin: 0 auto; text-align: center; margin-top: 10px; color: white; font-size: 4vw;}
+.titEntradas{margin: 0 auto; text-align: center; margin-top: 10px; color: white; font-size: 3vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
 
 .tutorialesContenido h1{
@@ -243,14 +245,14 @@ marquee a:hover{background: #a1c04a;}
        border-style: solid ;
        border-color: black;
        background-color: #a1c04a;
-
-       border-width: 5px;
-       border-radius: 5px;
+       border-width: 7px;
+       border-radius: 10px;
        font-size: 1.5vw;
        width: 15%;
        height: auto;
        margin: 1%;
        padding: 2%;
+       
 }
 
 .item a{
@@ -258,6 +260,7 @@ marquee a:hover{background: #a1c04a;}
        text-decoration: none;
        color: black;
        font-weight: bold;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .item img{
