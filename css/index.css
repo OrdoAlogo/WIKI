@@ -83,7 +83,7 @@ ul ul a{
 }
 
 /* Icono 3 barras menu desplegable movil */
-.icon-menu{display: none; color: white;}
+.icon-menu,.icon-cross{display: none;}
 .icon-home,.icon-info{font-size: 20px;}
 
 
@@ -512,7 +512,8 @@ marquee a:hover{background: #a1c04a;}
 ul li {border-bottom:1px solid #aedf27; display: block; text-align: left;}
 nav ul{left: -1500px; display: block; background: black; height: 0px; position:absolute; border-radius: 0px 10px 0px 0px;}
 nav ul li a{color: white;}
-.icon-menu{display: block;}
+.icon-cross{font-size: 5vw; color: white; position: relative; }
+.icon-menu{display: block; font-size: 5vw; color: white; position: relative; }
 .menuLetra{display: block; font-size: 30px; color: white; cursor: pointer;}
 .menuLetra:hover{color: #a1c04a;}
 
