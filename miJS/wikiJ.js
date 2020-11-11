@@ -5,11 +5,17 @@ $(document).ready(function(){
         function(){
         $('nav ul').animate({"left":"-35px"},1000);
         $(".icon-menu").css({"color":"#a1c04a"});
-        $('nav ul').css({"height":"270px","width":"50%","z-index":"1000","background-color":"#000000"});
+        $('nav ul').css({"height":"270px","width":"200px","z-index":"1000","background-color":"#000000", "padding":"20px"});
         $('ul li a').css({"color":"#a1c04a"});
         },
         function(){
             $('nav ul').animate({"left":"-1500px"},1000);
+
+            setTimeout(function(){
+                $('nav ul').css({"height":"auto","width":"80%","background-color":"white", "padding":"0"});  
+                $('ul li a').css({"color":"black"});
+            }, 500);
+            
         }
     )
 });
@@ -89,18 +95,20 @@ var arrayFotosProxmoxVM=new Array(
     "img/proxmoxVM/paso5.png",
     "img/proxmoxVM/paso6.png",
     "img/proxmoxVM/paso7.png",
-    "img/proxmoxVM/paso8.png"
+    "img/proxmoxVM/paso8.png",
+    "img/proxmoxVM/paso9.png"
 );
 
 var arrayContenidoProxmoxVM=new Array(
-    "Para realizar las copias de ubuntu, instalaremos FreeNAS  dentro de proxmox. Si no tenemos ninguna iso en el servidor subiremos una desde el ordenador.",
+    "Para crear una máquina necesitaremos una imagen iso. Si no tenemos ninguna iso en el servidor subiremos una desde el ordenador.",
     "Seleccionamos una iso desde nuestro ordenador.",
     "Seleccionaremos el botón situado en el lado superior derecho.",
     "Nos aparecerá la siguiente ventana. Le damos un nombre e ID.",
     "Seleccionamos la iso del sistema.",
     "Le damos el espacio deseado al disco.",
     "Le damos la cantidad de núcleos.",
-    "La cantidad de memoria ram."
+    "La cantidad de memoria ram.",
+    "Una vez se hayan configurado todos los apartados, nos mostrará un resumen. Podremos seleccionar que se ejecute inmediatamente después  de pulsar el botón Finish."
 );
 
 var imgAnterior=document.getElementById("anterior").addEventListener("click",anteriorFotoTutorialB);
