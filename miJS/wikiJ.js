@@ -1,18 +1,15 @@
 
 /* FUNCIÓN MENU DESPLEGABLE MOVIL */
 $(document).ready(function(){
-    $(".menuLetra").toggle(
+    $(".icon-menu").toggle(
         function(){
-        $('nav ul').animate({"left":"0px"},1000);
-        $('.icon-menu').css({"display":"none"});
-        $('.icon-cross').css({"display":"block"});
-        $('nav ul').css({"height":"535px"});
-
+        $('nav ul').animate({"left":"-35px"},1000);
+        $(".icon-menu").css({"color":"#a1c04a"});
+        $('nav ul').css({"height":"270px","width":"50%","z-index":"1000","background-color":"#000000"});
+        $('ul li a').css({"color":"#a1c04a"});
         },
         function(){
             $('nav ul').animate({"left":"-1500px"},1000);
-            $('.icon-menu').css({"display":"block"});
-            $('.icon-cross').css({"display":"none"});
         }
     )
 });
