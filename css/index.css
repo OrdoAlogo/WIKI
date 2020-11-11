@@ -293,7 +293,7 @@ marquee a:hover{background: #a1c04a;}
        width: 25%;
        height: 19%;;
 }
-
+.mainApache{width: 70%; margin: 0 auto; border:2px solid #a1c04a;}
 .mainSSH{width: 70%; margin: 0 auto; border:2px solid #a1c04a;}
 .imagenesSSH{ margin-top:10px; display: flex; flex-direction: row; justify-content: space-around; justify-items: center;}
 
