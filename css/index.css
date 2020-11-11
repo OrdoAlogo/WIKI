@@ -28,7 +28,7 @@ h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 /* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
 
 
-*{margin: 0;border:1px solid red};
+*{margin: 0};
 
 h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 /* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
@@ -70,18 +70,11 @@ header{
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
 
-<<<<<<< HEAD
-nav{margin: 0 auto; width: 100%; background:black;  }
-ul{height: 100%; background: white; border: 2px solid #a1c04a; display: flex; width: 80%; margin: 0 auto; text-align: center; border-radius: 10px; padding:0;}
-ul li{ list-style: none; display: inline; margin: 0 auto; width: 100%; padding: 15px; }
-ul li a{ text-decoration: none; color: black;  font-size: 30px;  border-radius: 5px; }
-=======
 nav{margin: 0 auto; background:black; padding: 10px; }
 ul{height: 100%; background: white; border: 2px solid #a1c04a; display: flex; width: 80%; margin: 0 auto; text-align: center; border-radius: 10px; }
 ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
 ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; }
 
->>>>>>> 2fe504bbbd25d600c206b1204cdc434bdf703b12
 ul li a:hover{color: black; background: #aedf27;}
 ul ul a{font-size:  1.2rem}
 
