@@ -5,11 +5,17 @@ $(document).ready(function(){
         function(){
         $('nav ul').animate({"left":"-35px"},1000);
         $(".icon-menu").css({"color":"#a1c04a"});
-        $('nav ul').css({"height":"270px","width":"50%","z-index":"1000","background-color":"#000000"});
+        $('nav ul').css({"height":"270px","width":"200px","z-index":"1000","background-color":"#000000", "padding":"20px"});
         $('ul li a').css({"color":"#a1c04a"});
         },
         function(){
             $('nav ul').animate({"left":"-1500px"},1000);
+
+            setTimeout(function(){
+                $('nav ul').css({"height":"auto","width":"80%","background-color":"white", "padding":"0"});  
+                $('ul li a').css({"color":"black"});
+            }, 500);
+            
         }
     )
 });

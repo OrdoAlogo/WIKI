@@ -11,27 +11,11 @@ img:hover{opacity: 0.5;}
        src: url(LaOriental-Bold.otf);
 }
 
-
-/* ----------------GENERAL---------------------- */
-@font-face{
-       font-family:'osaka';
-       src: url(osaka-re.ttf);
-}
-@font-face{
-       font-family:'oriental';
-       src: url(LaOriental-Bold.otf);
-}
-
 *{margin: 0; /* border: 1px solid red; */}
 
 h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
 /* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
 
-
-*{margin: 0;}
-
-h3{font-family: 'Inconsolata', monospace; font-size: 3rem;}
-/* h2{font-family: 'Inconsolata', monospace; font-size: 4rem;} */
 
 /*ENCABEZADO*/
 header{
@@ -70,9 +54,32 @@ header{
 
 /*ESTILOS DEL MENU DE NAVEGACION*/
 
-nav{margin: 0 auto; background:black; padding: 10px; }
-ul{height: 100%; background: white; border: 2px solid #a1c04a; display: flex; width: 80%; margin: 0 auto; text-align: center; border-radius: 10px; }
-ul li{ list-style: none; display: inline; margin: 0 auto; width: 90%; padding: 15px; }
+nav{
+       margin: 0 auto; 
+       width: 100%; 
+       background:black; 
+}
+ul{
+       
+       background: white;
+       height: 100%; 
+       border: 2px solid #a1c04a; 
+       display: flex; 
+       width: 80%; 
+       margin: 0 auto; 
+       justify-content: center; 
+       text-align: center; 
+       border-radius: 10px; 
+       padding: 0;
+
+}
+ul li{ 
+       list-style: none; 
+       display: inline; 
+       margin: 0 auto;
+       width: 100%; 
+       padding: 15px; 
+       }
 ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; }
 
 ul li a:hover{color: black; background: #aedf27;}
@@ -806,7 +813,7 @@ footer{
 ##Screen = B/w 320px to 479px
 ----------------------------------------------------*/
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 120px) and (max-width: 480px) {
      
 /* ---------GENERAL------- ----*/
 .titulo{
@@ -846,7 +853,7 @@ footer{
 /*MAIN*/
 .portada{
        height:150px;
-       
+
 }
 .portada h1{
        font-size: 6vw;
