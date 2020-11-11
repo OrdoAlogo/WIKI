@@ -83,18 +83,7 @@ ul li{
 ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; }
 
 ul li a:hover{color: black; background: #aedf27;}
-ul ul {
-       display:none;
-       position:absolute;
-/*top:100%;
-left:0; 
-padding:0;
-width:auto;
-z-index: +1; */
-}
-ul ul a{
-       font-size:  1.2rem;
-}
+ul ul a{font-size:  1.2rem}
 
 /* Icono 3 barras menu desplegable movil */
 .icon-menu,.icon-cross{display: none; color: #a1c04a;}
