@@ -19,7 +19,23 @@ $(document).ready(function(){
         }
     )
 });
-    
+
+
+/* ---------------Modal tutoriales B-------------------- */
+
+var modal = document.getElementById("miModal");
+var img = document.getElementById("fotoB");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.style.width='1000px';
+  modalImg.src = this.src;
+}
+var span = document.getElementsByClassName("cerrar")[0];
+// Cerrar modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
        
 /* ---------------------------------FUNCIONES TUTORIALES B------------------------------------ */
 
