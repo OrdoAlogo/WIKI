@@ -342,7 +342,7 @@ marquee a:hover{background: #a1c04a;}
        margin-bottom: 1%;
        color: white;
        text-align: center;
-       font-size: 2vw;
+       font-size: 1.5vw;
        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 #fotoB{
@@ -562,6 +562,8 @@ cursor: pointer;
        font-size:2vw;
 
 }     
+
+
 
 /* -------------freenas.html, proxmox.html, linux.html--------------- */
 
@@ -872,7 +874,10 @@ footer{
        width: 12vw;
       
 }
-
+/* Modal, en versiones moviles */
+.imagenModal{
+       display: none;
+}
 
 /* -------------freenas.html, proxmox.html, linux.html--------------- */
 
@@ -1029,6 +1034,11 @@ marquee{
        height: 12vw;
        width: 12vw;
       
+}
+
+/* Modal, en versiones moviles */
+.modal, .imagenModal, .cerrar{
+       display: none;
 }
 
 /* -------------freenas.html, proxmox.html, linux.html--------------- */
