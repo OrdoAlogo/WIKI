@@ -10,6 +10,11 @@ img:hover{opacity: 0.5;}
        font-family:'oriental';
        src: url(LaOriental-Bold.otf);
 }
+@font-face{
+       font-family:'escolar';
+       src: url(Schoolwork-Regular.ttf);
+}
+
 
 *{margin: 0; /* border: 1px solid red; */}
 
@@ -80,7 +85,7 @@ ul li{
        width: 100%; 
        padding: 15px; 
        }
-ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; }
+ul li a{ text-decoration: none; color: black;  font-size: 30px; padding: 5px; border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
 
 ul li a:hover{color: black; background: #aedf27;}
 ul ul a{font-size:  1.2rem}
@@ -279,7 +284,7 @@ marquee a:hover{background: #a1c04a;}
 .explicacion{ color: rgb(156, 153, 153);}
 
 .comando,.explicacion {
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
        font-size: 2vW;
        width: 100%;
 }
@@ -324,11 +329,10 @@ marquee a:hover{background: #a1c04a;}
 #paso{
        margin-top: 10%;
        margin-bottom: 1%;
-       font-size:1vw;
        color: white;
        text-align: center;
        font-size: 2vw;
-
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 #fotoB{
        width: 40vw;
@@ -349,8 +353,6 @@ marquee a:hover{background: #a1c04a;}
 }
 
 .tutorialB{
-       
-
        padding: 1%;
 }
 .tutorialB span{
@@ -364,6 +366,14 @@ marquee a:hover{background: #a1c04a;}
        font-size: 1vw;
        margin-top: 1%;
        color: white;
+       font-family:  'Arial Narrow Bold', sans-serif;
+}
+
+
+.tutorialB h2 a{
+       color: #a1c04a;
+       text-decoration: none;
+       font-family: 'osaka';
 }
 
 
