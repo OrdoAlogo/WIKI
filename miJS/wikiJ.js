@@ -19,7 +19,28 @@ $(document).ready(function(){
         }
     )
 });
-    
+
+
+/* ---------------Modal tutoriales B-------------------- */
+
+var modal = document.getElementById("miModal");
+var img = document.getElementById("fotoB").addEventListener("click",abrirModal);
+var modalImg = document.getElementById("img01");
+function abrirModal(){
+  modal.style.display = "block";
+  modalImg.style.width='1000px';
+  modalImg.src = this.src;
+}
+var span = document.getElementsByClassName("cerrar")[0].addEventListener("click",cerrarModal);
+// Cerrar modal
+ function cerrarModal() { 
+  modal.style.display = "none";
+}
+
+/* Desactiva el modal en versiones moviles */
+if ($(window).width() < 1024) {
+ img=document.getElementById("fotoB").removeEventListener("click",abrirModal);
+}
        
 /* ---------------------------------FUNCIONES TUTORIALES B------------------------------------ */
 
