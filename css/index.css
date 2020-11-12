@@ -1,6 +1,6 @@
 
 body{  background:linear-gradient(to bottom, black,#616161) ;}
-img:hover{opacity: 0.5;}
+.fotoHover:hover{opacity: 0.5;}
 /* ----------------GENERAL---------------------- */
 @font-face{
        font-family:'osaka';
