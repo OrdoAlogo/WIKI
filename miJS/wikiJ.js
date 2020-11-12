@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('ul li a').css({"color":"#a1c04a"});
         },
         function(){
-            $('nav ul').animate({"left":"-1500px"},1000);
+            $('nav ul').animate({"left":"-1500px"},900);
 
             setTimeout(function(){
                 $('nav ul').css({"height":"auto","width":"80%","background-color":"white", "padding":"0"});  
