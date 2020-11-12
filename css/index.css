@@ -563,6 +563,8 @@ cursor: pointer;
 
 }     
 
+
+
 /* -------------freenas.html, proxmox.html, linux.html--------------- */
 
 .item {
@@ -872,7 +874,10 @@ footer{
        width: 12vw;
       
 }
-
+/* Modal, en versiones moviles */
+.imagenModal{
+       display: none;
+}
 
 /* -------------freenas.html, proxmox.html, linux.html--------------- */
 
@@ -1029,6 +1034,11 @@ marquee{
        height: 12vw;
        width: 12vw;
       
+}
+
+/* Modal, en versiones moviles */
+.modal, .imagenModal, .cerrar{
+       display: none;
 }
 
 /* -------------freenas.html, proxmox.html, linux.html--------------- */
