@@ -25,47 +25,49 @@
             <li><a href="freenas.html">FreeNAS</a></li>
            </ul>
         </nav>
-    <main class="mainApache">
-        <p class="explicacion">
-            Teniendo el ubuntu server instalado o cualquier otro sistema linux podemos instalar un servicio Apache para acceder a la pagina web <br>
-            Lo primero que tendremos que hacer será instalar el servicio:
-        <p class="comando">sudo apt install apache2</p>
-        <p class="explicacion">una vez instalado el apache iremos a la ruta /etc/apache2/sites-available con el siguiente comando
-        <p class="comando">cd /etc/apache2/sites-available</p>
-        <p class="explicacion"> una vez en este sitio crearemos un archivo utilizando el nombre de nuestro dominio. El nuestro sera dominio.
-        <p class="comando"> sudo nano dominio.com.conf</p>
-        <p class="explicacion"> Este archivo nos aparecera vacio y tendremos que configurarlo de la siguiente manera
-        <p class="comando"> < VirtualHost *:80> <br>ServerAdmin admin@dominio.com<br>ServerName dominio.com <br>ServerName dominio.com <br>ServerAlias www.dominio.com <br>
-            DocumentRoot /var/www/dominio.com/html # Aqui ira la ruta en la que pondremos nuestra pagina web, tenerd en cuenta que tendra que tener permisos 777<br>
-            ErrorLog ${APACHE_LOG_DIR}/error.log <br>CustomLog ${APACHE_LOG_DIR}/access.log combined <br>< /VirtualHost> </p>
-        <p class="explicacion"> Una vez configurado este archivo tendremos que habilitarlo para que el apache lo muestre al llamar al servidor para esto, ejecutaremos el siguiente comando 
-        <p class="comando">sudo a2ensite dominio.com.conf</p>
-        <p class="explicacion"> El siguiente paso sera desabilitar el archivo que viene por defecto
-        <p class="comando"> sudo a2dissite 000-default.conf</p>
-        <p class="explicacion"> Una vez echos estos pasos comprobaremos que todo esta bien con el siguiente comando. Cuando pongamos el comando nos saldra un OK
-        <p class="comando">sudo apache2ctl configtest</p>
-        <p class="explicacion">por ultimo reiniciaremos el servicio y la pagina se vera cuando solicitemos www.dominio.com
-        <p class="comando">sudo systemctl restart apache2</p>
-        <p class="explicacion">Felicidades ya has configurado tu apache2</p>
+    
+        <h1 class="titEntradas">Instalación y configuración de apache.</h1> 
+        <main class="mainApache">
+            <p class="explicacion">
+                Teniendo el ubuntu server instalado o cualquier otro sistema linux podemos instalar un servicio Apache para acceder a la pagina web <br>
+                Lo primero que tendremos que hacer será instalar el servicio:
+            <p class="comando">sudo apt install apache2</p>
+            <p class="explicacion">una vez instalado el apache iremos a la ruta /etc/apache2/sites-available con el siguiente comando
+            <p class="comando">cd /etc/apache2/sites-available</p>
+            <p class="explicacion"> una vez en este sitio crearemos un archivo utilizando el nombre de nuestro dominio. El nuestro sera dominio.
+            <p class="comando"> sudo nano dominio.com.conf</p>
+            <p class="explicacion"> Este archivo nos aparecera vacio y tendremos que configurarlo de la siguiente manera
+            <p class="comando"> < VirtualHost *:80> <br>ServerAdmin admin@dominio.com<br>ServerName dominio.com <br>ServerName dominio.com <br>ServerAlias www.dominio.com <br>
+                DocumentRoot /var/www/dominio.com/html # Aqui ira la ruta en la que pondremos nuestra pagina web, tenerd en cuenta que tendra que tener permisos 777<br>
+                ErrorLog ${APACHE_LOG_DIR}/error.log <br>CustomLog ${APACHE_LOG_DIR}/access.log combined <br>< /VirtualHost> </p>
+            <p class="explicacion"> Una vez configurado este archivo tendremos que habilitarlo para que el apache lo muestre al llamar al servidor para esto, ejecutaremos el siguiente comando 
+            <p class="comando">sudo a2ensite dominio.com.conf</p>
+            <p class="explicacion"> El siguiente paso sera desabilitar el archivo que viene por defecto
+            <p class="comando"> sudo a2dissite 000-default.conf</p>
+            <p class="explicacion"> Una vez echos estos pasos comprobaremos que todo esta bien con el siguiente comando. Cuando pongamos el comando nos saldra un OK
+            <p class="comando">sudo apache2ctl configtest</p>
+            <p class="explicacion">por ultimo reiniciaremos el servicio y la pagina se vera cuando solicitemos www.dominio.com
+            <p class="comando">sudo systemctl restart apache2</p>
+            <p class="explicacion">Felicidades ya has configurado tu apache2</p>
+                
+                
+                
+                
+                
             
-            
-            
-            
-            
-        
-        </p>
-    </main>
-    <footer id="contacto">
-        <div class="info">
-            <p>Email: correo@gmail.com</p>
-            <p>Tel contacto: 94 444 444 444</p>
-            <p>Grupo 2 Castellano - FP Txurdinaga 2020</p>
-        </div>
-        <div class="rrss">
-            <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
-            <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
-            <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
-        </div>
-    </footer>
-</body>
+            </p>
+        </main>
+        <footer id="contacto">
+            <div class="info">
+                <p>Email: correo@gmail.com</p>
+                <p>Tel contacto: 94 444 444 444</p>
+                <p>Grupo 2 Castellano - FP Txurdinaga 2020</p>
+            </div>
+            <div class="rrss">
+                <a href="https://www.facebook.com" target = "_blank"><span class="icon-facebook"></span></a>
+                <a href="https://www.instagram.com" target = "_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.youtube.com" target = "_blank"><span class="icon-youtube"></span></a>
+            </div>
+        </footer>
+    </body>
 </html>
